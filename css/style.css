@@ -18,6 +18,10 @@ secondary:
 h1,h2: Raleway;
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -163,3 +167,5 @@ a:active {
 img {
   width: 100%;
 }
+
+/*Layout styling*/
