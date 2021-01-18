@@ -16,7 +16,7 @@
   <!-- Header -->
   <header>
     <div class="container">
-      <div>
+      <div class="wrapper-logo">
         <a href="index.html"><img src="img/Logo_v2.svg" class="logo" alt="Maria Hartung Logo"></a>
       </div>
       <nav>
@@ -32,13 +32,15 @@
   <main>
     <div>
       <!-- Hero Section -->
-      <div class="container">
-        <div id="hero">
+      <div id="hero">
+        <div class="container">
           <picture>
             <source srcset="img/worldup/hero_worldup_mobile.jpg" media="(max-width:767px)">
             <img src="img/worldup/hero_worldup_desktop.jpg" alt="hero expert image">
           </picture>
         </div>
+      </div>
+      <div class="container">
         <div class="wrapper">
           <h2>Overview</h2>
           <p>Worldup is a mobile vocabulary app that enables language learners to learn words in everyday context and talk to native speakers and peers from all around the world.
@@ -230,13 +232,13 @@
           <p>Now that I gained enough clarity through user research, the proto-persona and the user/job stories I could define the problem and propose a potential solution:
           </p>
           <h4>Problem Statement</h4>
-          <p><i>Francesca Mancini needs a way to learn vocabulary by interacting with others and learning advanced words in relevant contexts,
-              because she wants to advance in her career, apply her knowledge to everyday situations and assess her progress by getting instant feedback from others.</i>
+          <p>Francesca Mancini needs a way to learn vocabulary by interacting with others and learning advanced words in relevant contexts,
+            because she wants to advance in her career, apply her knowledge to everyday situations and assess her progress by getting instant feedback from others.
           </p>
           <h4>Hypothesis Statement</h4>
-          <p><i>We believe that by creating a vocabulary app as a supportive social platform where language learners can call and chat with native speakers and other students
-              to improve their language skills and by providing a feature to learn new words in relevant contexts via categories, for Francesca Mancini, we will achieve an increase
-              in language fluency and help Francesca make faster progress in learning english.</i>
+          <p>We believe that by creating a vocabulary app as a supportive social platform where language learners can call and chat with native speakers and other students
+            to improve their language skills and by providing a feature to learn new words in relevant contexts via categories, for Francesca Mancini, we will achieve an increase
+            in language fluency and help Francesca make faster progress in learning english.
           </p>
         </div>
       </div>
@@ -471,37 +473,44 @@
       </div>
       <!-- Divider End -->
       <div class="container">
-        <div class="center">
-          <iframe src="https://marvelapp.com/prototype/7h934hb?emb=1&iosapp=false&frameless=false" width="402" height="803" allowTransparency="true" frameborder="0"></iframe>
-        </div>
-        <div class="center">
+        <div class="wrapper">
+          <p>After implementing user testing feedback, I finalized the low-fidelity prototype using marvel.
+            Please feel free to interact with the prototype to see how it works.
+          </p>
+          <div class="prototype">
           <a href="https://marvelapp.com/prototype/7h934hb" class="button-prototype" target="_blank">View Prototype</a>
         </div>
       </div>
-      <!-- Divider -->
-      <div class="divider">
+    </div>
+    <!-- Divider -->
+    <div class="divider">
+      <div>
+        <h2>Learnings</h2>
+      </div>
+    </div>
+    <!-- Divider End -->
+    <div class="container">
+      <div class="wrapper-learnings">
         <div>
-          <h2>Learnings</h2>
+          <p><b>Less is more:</b> In terms of content and options, less is sometimes more.
+            If users are presented with too much content on the screen or too many options to choose from, they feel overwhelmed.
+            I will keep this in mind when designing interfaces in the future.
+          </p>
+          <p><b>Have visual cues for orientation:</b> Without any visual cues people sometimes get lost in the task,
+            so it´s important to guide them through the interface by providing visual cues for easy orientation.
+          </p>
+          <p><b>Importance of consistency:</b> People need consistent names and labels to not get confused.
+            If the screen says add a word, they would also expect a button with the add a word label.
+            I will remember this when designing buttons and screens in upcoming projects.
+          </p>
+          <p><b>Expect user´s mental model to be different from your own:</b> Solutions that work for you, might not work for the user,
+            so it´s important to know they often have a different mental model from your own.
+          </p>
+          <p><b>Test early and often:</b> Test and fail early and often to learn from mistakes and create better user experiences.
+          </p>
         </div>
       </div>
-      <!-- Divider End -->
-      <div class="container">
-        <div class="wrapper">
-          <ul>
-            <li><b>Less is more:</b> In terms of content and options, less is sometimes more.
-              If users are presented with too much content on the screen or too many options to choose from, they feel overwhelmed.
-              I will keep this in mind when designing interfaces in the future.</li>
-            <li><b>Have visual cues for orientation:</b> Without any visual cues people sometimes get lost in the task,
-              so it´s important to guide them through the interface by providing visual cues for easy orientation.</li>
-            <li><b>Importance of consistency:</b> People need consistent names and labels to not get confused.
-              If the screen says add a word, they would also expect a button with the add a word label.
-              I will remember this when designing buttons and screens in upcoming projects.</li>
-            <li><b>Expect user´s mental model to be different from your own:</b> Solutions that work for you, might not work for the user,
-              so it´s important to know they often have a different mental model from your own.</li>
-            <li><b>Test early and often:</b> Test and fail early and often to learn from mistakes and create better user experiences.</li>
-          </ul>
-        </div>
-      </div>
+    </div>
     </div>
   </main>
   <!-- Footer  -->
@@ -525,7 +534,7 @@
         </ul>
       </div>
       <div>
-        <a href="impressum.html" class="impressum">Legal Disclosure</a>
+        <a href="impressum.html">Legal Disclosure</a>
         <p>
           © Maria Hartung 2020-2021
         </p>
