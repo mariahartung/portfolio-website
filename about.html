@@ -37,12 +37,14 @@
     </div>
     <div id="about-me">
       <div class="container">
-        <picture>
-          <source srcset="img/selfie_mobile.jpg" media="(max-width:767px)">
-          <img src="img/selfie_desktop.jpg" alt="Image Maria Hartung">
-        </picture>
+        <div class="selfie">
+          <picture>
+            <source srcset="img/selfie_mobile.jpg" media="(max-width:767px)">
+            <img src="img/selfie_desktop.jpg" alt="Image Maria Hartung">
+          </picture>
+        </div>
         <div class="row">
-          <div>
+          <div class="col-lg-7">
             <h2>My Story</h2>
             <p>
               Hi. I´m Maria. Nice to meet you.
@@ -59,14 +61,14 @@
             <p>
               When I´m not designing, I enjoy shooting street photography, reading or playing guitar.
             </p>
-            <div class="center">
+            <div class="center resume-button">
               <a href="files/CV_MariaHartung.pdf" class="button-cv" target="_blank">View Resume</a>
             </div>
           </div>
-          <div>
-            <h2>Skills & Tools</h2>
+          <div class="col-lg-5">
+            <h2 class="skills">Skills & Tools</h2>
             <div>
-              <div>
+              <div class="col-md-6 col-lg-6">
                 <h3>Relevant Skills</h3>
                 <ul>
                   <li>Competitive Analysis</li>
@@ -81,7 +83,7 @@
                   <li>HTML/CSS/JavaScript</li>
                 </ul>
               </div>
-              <div>
+              <div class="col-md-6 col-lg-6">
                 <h3>Tools I Use</h3>
                 <ul>
                   <li>Sketch</li>
@@ -121,7 +123,7 @@
         </ul>
       </div>
       <div>
-        <a href="impressum.html">Legal Disclosure</a>
+        <a href="impressum.html" class="impressum">Legal Disclosure</a>
         <p>
           © Maria Hartung 2020-2021
         </p>

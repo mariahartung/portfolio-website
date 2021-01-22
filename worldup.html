@@ -33,7 +33,7 @@
     <div>
       <!-- Hero Section -->
       <div id="hero">
-        <div class="container">
+        <div class="container-hero">
           <picture>
             <source srcset="img/worldup/hero_worldup_mobile.jpg" media="(max-width:767px)">
             <img src="img/worldup/hero_worldup_desktop.jpg" alt="hero expert image">
@@ -89,7 +89,7 @@
         </div>
       </div>
       <!-- Divider End-->
-      <div>
+      <div class="container">
         <picture>
           <source srcset="img/worldup/designthinking_mobile.png" media="(max-width:767px)">
           <img src="img/worldup/designthinking_desktop.png" alt="Design thinking process image">
@@ -198,7 +198,7 @@
           <p>Next, I created user and job stories to understand what Francesca wants to accomplish in what context in order to
             define functions and solutions for my app from a human perspective.
           </p>
-          <div class="row">
+          <div>
             <div>
               <h4>User Stories</h4>
               <ul>
@@ -258,9 +258,9 @@
             User flows helped me to visualize the paths Francesca would take to accomplish her goal in the app.
           </p>
           <h4>Take a lesson on business vocabulary</h4>
-          <p>Entry Point: Splash Screen
+          <p><b>Entry Point</b>: Splash Screen
           </p>
-          <p>Success Criteria: End Lesson
+          <p><b>Success Criteria</b>: End Lesson
           </p>
           <ol>
             <li>User taps application icon, app begins to load (entry point)</li>
@@ -291,22 +291,26 @@
             <li>Dashboard</li>
             <li>User views a list of categories on dashboard</li>
             <li>User selects business category</li>
-            <li>User selects Learn or Play</li>
-            <ol>
-              <li>Learn</li>
+            <li>User selects Learn or Play
               <ol>
-                <li>User does an exercise (Next: Step 8)</li>
+                <li>Learn
+                  <ol>
+                    <li>User does an exercise (Next: Step 8)</li>
+                  </ol>
+                </li>
+                <li>Play
+                  <ol>
+                    <li>User takes a quiz (Next: Step 8)</li>
+                  </ol>
+                </li>
               </ol>
-              <li>Play</li>
+            </li>
+            <li>Lesson complete? (Y/N)
               <ol>
-                <li>User takes a quiz (Next: Step 8)</li>
+                <li>Show results with an affirmation like "well done!"</li>
+                <li>Show results and proceed to Step 9</li>
               </ol>
-            </ol>
-            <li>Lesson complete? (Y/N)</li>
-            <ol>
-              <li>Show results with an affirmation like "well done!"</li>
-              <li>Show results and proceed to Step 9</li>
-            </ol>
+            </li>
             <li>End Lesson (success criteria) and go back to dashboard to view categories</li>
           </ol>
         </div>
@@ -321,9 +325,9 @@
         </div>
         <div class="wrapper">
           <h4>Add a new word to category</h4>
-          <p>Entry Point: Dashboard
+          <p><b>Entry Point</b>: Dashboard
           </p>
-          <p>Success Criteria: Save new word in category
+          <p><b>Success Criteria</b>: Save new word in category
           </p>
           <ol>
             <li>Dashboard (entry point)</li>
@@ -478,39 +482,39 @@
             Please feel free to interact with the prototype to see how it works.
           </p>
           <div class="prototype">
-          <a href="https://marvelapp.com/prototype/7h934hb" class="button-prototype" target="_blank">View Prototype</a>
+            <a href="https://marvelapp.com/prototype/7h934hb" class="button-prototype" target="_blank">View Prototype</a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Divider -->
-    <div class="divider">
-      <div>
-        <h2>Learnings</h2>
-      </div>
-    </div>
-    <!-- Divider End -->
-    <div class="container">
-      <div class="wrapper-learnings">
+      <!-- Divider -->
+      <div class="divider">
         <div>
-          <p><b>Less is more:</b> In terms of content and options, less is sometimes more.
-            If users are presented with too much content on the screen or too many options to choose from, they feel overwhelmed.
-            I will keep this in mind when designing interfaces in the future.
-          </p>
-          <p><b>Have visual cues for orientation:</b> Without any visual cues people sometimes get lost in the task,
-            so it´s important to guide them through the interface by providing visual cues for easy orientation.
-          </p>
-          <p><b>Importance of consistency:</b> People need consistent names and labels to not get confused.
-            If the screen says add a word, they would also expect a button with the add a word label.
-            I will remember this when designing buttons and screens in upcoming projects.
-          </p>
-          <p><b>Expect user´s mental model to be different from your own:</b> Solutions that work for you, might not work for the user,
-            so it´s important to know they often have a different mental model from your own.
-          </p>
-          <p><b>Test early and often:</b> Test and fail early and often to learn from mistakes and create better user experiences.
-          </p>
+          <h2>Learnings</h2>
         </div>
       </div>
-    </div>
+      <!-- Divider End -->
+      <div class="container">
+        <div class="wrapper-learnings">
+          <div>
+            <p><b>Less is more:</b> In terms of content and options, less is sometimes more.
+              If users are presented with too much content on the screen or too many options to choose from, they feel overwhelmed.
+              I will keep this in mind when designing interfaces in the future.
+            </p>
+            <p><b>Have visual cues for orientation:</b> Without any visual cues people sometimes get lost in the task,
+              so it´s important to guide them through the interface by providing visual cues for easy orientation.
+            </p>
+            <p><b>Importance of consistency:</b> People need consistent names and labels to not get confused.
+              If the screen says add a word, they would also expect a button with the add a word label.
+              I will remember this when designing buttons and screens in upcoming projects.
+            </p>
+            <p><b>Expect user´s mental model to be different from your own:</b> Solutions that work for you, might not work for the user,
+              so it´s important to know they often have a different mental model from your own.
+            </p>
+            <p><b>Test early and often:</b> Test and fail early and often to learn from mistakes and create better user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <!-- Footer  -->
@@ -534,7 +538,7 @@
         </ul>
       </div>
       <div>
-        <a href="impressum.html">Legal Disclosure</a>
+        <a href="impressum.html" class="impressum">Legal Disclosure</a>
         <p>
           © Maria Hartung 2020-2021
         </p>
