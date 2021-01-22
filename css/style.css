@@ -91,7 +91,6 @@ h5 {
 
 a {
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   color: #2f2f2f;
@@ -121,6 +120,9 @@ a:active {
   padding: 8px 12px;
   border: 1px solid #ffdb5a;
   border-radius: 12px;
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
 .button-project:hover,
@@ -131,6 +133,7 @@ a:active {
 .button-prototype:focus {
   color: #2f2f2f;
   background-color: #ffd027;
+  box-shadow: 2px 4px 12px 0px rgba(47, 47, 47, 0.3);
 }
 
 .button-project:active,
@@ -157,12 +160,16 @@ a:active {
   padding: 8px 12px;
   border: 1px solid #ffdb5a;
   border-radius: 12px;
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
 .button-contact:hover,
 .button-contact:focus {
   color: #2f2f2f;
-  background-color: #ffdb5a;
+  background-color: #ffd027;
+  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.5);
 }
 
 .button-contact:active {
@@ -179,12 +186,16 @@ a:active {
   padding: 8px 12px;
   border: 1px solid #ffdb5a;
   border-radius: 12px;
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
 .button-cv:hover,
 .button-cv:focus {
   color: #2f2f2f;
   background-color: #ffd027;
+  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
 .button-cv:active {
@@ -196,7 +207,6 @@ img {
 }
 
 /*Layout styling*/
-
 .container {
   padding: 0 15px;
 }
@@ -354,7 +364,8 @@ footer a:active {
   padding: 0;
 }
 
-#expert #hero .container {
+.container-hero {
+  background-color: #ffffff;
   padding: 0;
 }
 
@@ -379,10 +390,6 @@ footer a:active {
   width: 100%;
 }
 
-#worldup #hero .container {
-  padding: 0;
-}
-
 #worldup #hero {
   background-color: #ffffff;
   padding: 0;
@@ -392,9 +399,341 @@ footer a:active {
   margin-bottom: 40px;
 }
 
-/*Layout styling End*/
+ul li {
+  padding: 4px 0;
+}
 
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+ol>li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 4px;
+}
+
+ol>li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 4px;
+}
+
+/*Layout styling End*/
 #impressum-content {
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.impressum {
+  color: #ffffff;
+}
+
+.impressum:visited {
+  color: #ffffff;
+}
+
+.impressum:hover,
+.impressum:focus {
+  color: #ffdb5a;
+}
+
+.impressum:active {
+  color: #ffdb5a;
+  text-decoration: underline;
+}
+
+/* medium devices (640px and larger) */
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  #index h3 {
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  header {
+    text-align: unset;
+    padding: 5px 0;
+  }
+
+  header .container {
+    display: block;
+  }
+
+  #expert header .container {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #worldup header .container {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .wrapper-logo {
+    display: inline-block;
+    text-align: center;
+    padding-top: unset;
+    margin: 15px 0 0 15px;
+    float: left;
+    width: 40px;
+    height: 40px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 2px;
+  }
+
+  main {
+    padding-top: 84px;
+  }
+
+  #hero span {
+    display: block;
+    font-size: 28px;
+  }
+
+  .col-md-6 {
+    padding: 0 15px;
+    width: 50%;
+    float: left;
+    display: table;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #work .row {
+    margin: 40px 0;
+  }
+
+  #work img {
+    max-width: 480px;
+  }
+
+  #about-me h3 {
+    margin-top: 0;
+  }
+
+  #about-me img {
+    max-width: 400px;
+  }
+
+  .selfie {
+    text-align: center;
+  }
+
+  #about-me .skills {
+    margin-top: 40px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #expert .container {
+    display: block;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+
+  .image {
+    margin: 20px 0;
+  }
+
+  .divider {
+    margin: 20px 0;
+  }
+
+  #worldup .container {
+    display: block;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+
+  #impressum-content .container {
+    display: inline-block;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 15px;
+  }
+
+  /* large devices (1024px and larger) */
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 34px;
+    }
+
+    #about-me .row h2 {
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 26px;
+    }
+
+    h4 {
+      font-size: 24px;
+    }
+
+    h5 {
+      font-size: 22px;
+    }
+
+    #work {
+      margin: 50px 0;
+    }
+
+    #work .row {
+      margin: 60px 0;
+    }
+
+    .col-lg-5 {
+      padding: 0;
+      width: 41.66%;
+      float: right;
+    }
+
+    .col-lg-6 {
+      padding-right: 30px;
+      width: 50%;
+      float: left;
+      display: block;
+    }
+
+    #about .col-lg-6 {
+      padding-bottom: 15px;
+      width: 100%;
+      float: none;
+      text-align: left;
+    }
+
+    #about-me .skills {
+      margin-top: 20px;
+    }
+
+    #about-me .row .col-lg-7 {
+      padding-left: 15px;
+      padding-right: 70px;
+      text-align: left;
+    }
+
+    .col-lg-7 {
+      padding: 0;
+      width: 58.33%;
+      float: left;
+      text-align: center;
+      display: block;
+    }
+
+    .center.resume-button {
+      text-align: left;
+    }
+
+    .image {
+      margin: 30px 0;
+    }
+
+    .divider {
+      margin: 40px 0;
+    }
+  }
+}
+
+/* CSS animation */
+.berlin-illustration {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-name: color-change;
+  animation-direction: alternate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-name: cloud-move;
+  animation-direction: alternate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation-name: cloud-move-reverse;
+  animation-direction: alternate;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
