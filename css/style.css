@@ -117,9 +117,10 @@ a:active {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   background-color: #ffdb5a;
-  padding: 8px 12px;
+  padding: 8px 24px;
+  margin-top: 10px;
   border: 1px solid #ffdb5a;
-  border-radius: 12px;
+  border-radius: 28px;
   transition-property: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: linear;
@@ -143,7 +144,7 @@ a:active {
 }
 
 .button-testing {
-  margin: 10px 10px 10px 0;
+  margin: 10px 16px 10px 0;
   display: inline-block;
 }
 
@@ -157,9 +158,9 @@ a:active {
   font-weight: 400;
   color: #ffffff;
   background-color: #2d3e50;
-  padding: 8px 12px;
+  padding: 8px 24px;
   border: 1px solid #ffdb5a;
-  border-radius: 12px;
+  border-radius: 28px;
   transition-property: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: linear;
@@ -183,9 +184,9 @@ a:active {
   font-weight: 400;
   color: #2f2f2f;
   background-color: #ffdb5a;
-  padding: 8px 12px;
+  padding: 8px 24px;
   border: 1px solid #ffdb5a;
-  border-radius: 12px;
+  border-radius: 28px;
   transition-property: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: linear;
@@ -216,7 +217,7 @@ img {
 }
 
 main {
-  padding-top: 138px;
+  padding-top: 151px;
 }
 
 .logo {
@@ -225,7 +226,7 @@ main {
 
 .wrapper-logo {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 header {
@@ -268,25 +269,34 @@ nav>ul>li>a:hover {
 
 nav>ul>li>a:active {
   color: #ffdb5a;
-  text-decoration: underline;
 }
 
 #hero {
   background-color: #2d3e50;
   color: #ffffff;
   text-align: center;
-  padding: 20px 0;
+  padding: 50px 0;
   display: inline-block;
   width: 100%;
 }
 
+#hero span {
+  display: block;
+  font-size: 24px;
+  padding-top: 5px;
+}
+
 #work {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 #work .row {
-  padding-bottom: 10px;
+  padding: 10px 0;
   margin: 30px 0;
+}
+
+#work .row .full-width{
+  margin: 0 -15px;
 }
 
 footer {
@@ -323,7 +333,6 @@ footer a:focus {
 
 footer a:active {
   color: #ffdb5a;
-  text-decoration: underline;
 }
 
 .icons {
@@ -340,6 +349,10 @@ footer a:active {
   text-align: center;
 }
 
+.center.resume-button {
+  margin-top: 30px;
+}
+
 #contact .center {
   padding: 10px 0;
 }
@@ -353,6 +366,18 @@ footer a:active {
   display: inline-block;
   width: 100%;
 }
+
+#about-me h2{
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+#about-me .skills {
+  margin-top: 50px;
+  margin-bottom: 27px;
+}
+
 
 #expert .container {
   display: inline-block;
@@ -376,8 +401,12 @@ footer a:active {
   margin: 15px 0;
 }
 
+.mockups {
+  margin: -25px 0;
+}
+
 .image {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .prototype {
@@ -395,6 +424,10 @@ footer a:active {
   padding: 0;
 }
 
+#worldup #hero .container-hero {
+  padding-top: 0;
+}
+
 .wrapper-learnings {
   margin-bottom: 40px;
 }
@@ -403,23 +436,16 @@ ul li {
   padding: 4px 0;
 }
 
-ol {
-  list-style-type: none;
-  counter-reset: item;
-  margin: 0;
-  padding: 0;
+.wireframes img {
+  margin: 20px 0;
 }
 
-ol>li {
-  display: table;
-  counter-increment: item;
-  margin-bottom: 4px;
+#index .underline-work {
+  border-bottom: 2px solid #ffffff;
 }
 
-ol>li:before {
-  content: counters(item, ".") ". ";
-  display: table-cell;
-  padding-right: 4px;
+#about .underline-about {
+  border-bottom: 2px solid #ffffff;
 }
 
 /*Layout styling End*/
@@ -501,7 +527,7 @@ ol>li:before {
     display: inline-block;
     text-align: center;
     padding-top: unset;
-    margin: 15px 0 0 15px;
+    margin: 20px 0 0 15px;
     float: left;
     width: 40px;
     height: 40px;
@@ -523,7 +549,7 @@ ol>li:before {
   }
 
   .col-md-6 {
-    padding: 0 15px;
+    padding: 0 20px;
     width: 50%;
     float: left;
     display: table;
@@ -535,12 +561,16 @@ ol>li:before {
     display: table;
   }
 
+  #work {
+    margin: 50px 0;
+  }
+
   #work .row {
     margin: 40px 0;
   }
 
   #work img {
-    max-width: 480px;
+    max-width: 580px;
   }
 
   #about-me h3 {
@@ -551,12 +581,13 @@ ol>li:before {
     max-width: 400px;
   }
 
-  .selfie {
-    text-align: center;
+  #about .col-md-6 {
+  padding-left:0;
+  padding-right: 80px;
   }
 
-  #about-me .skills {
-    margin-top: 40px;
+  .selfie {
+    text-align: center;
   }
 
   .container {
@@ -566,7 +597,7 @@ ol>li:before {
 
   #expert .container {
     display: block;
-    max-width: 840px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -578,21 +609,23 @@ ol>li:before {
     margin: 20px 0;
   }
 
-  #worldup .container {
-    display: block;
-    max-width: 840px;
-    margin: 0 auto;
+  .mockups {
+    margin: -30px 0;
   }
 
-  #impressum-content .container {
-    display: inline-block;
-    max-width: 1200px;
+  #worldup .container {
+    display: block;
+    max-width: 800px;
     margin: 0 auto;
-    margin-left: 15px;
   }
 
   /* large devices (1024px and larger) */
   @media only screen and (min-width: 1024px) {
+
+    body {
+      font-size: 20px;
+    }
+
     h1 {
       font-size: 36px;
     }
@@ -617,6 +650,10 @@ ol>li:before {
       font-size: 22px;
     }
 
+    #hero {
+      padding: 60px 0;
+    }
+
     #work {
       margin: 50px 0;
     }
@@ -626,7 +663,7 @@ ol>li:before {
     }
 
     .col-lg-5 {
-      padding: 0;
+      padding: 0 20px;
       width: 41.66%;
       float: right;
     }
@@ -646,7 +683,8 @@ ol>li:before {
     }
 
     #about-me .skills {
-      margin-top: 20px;
+      margin-top: 28px;
+      margin-bottom: 26px;
     }
 
     #about-me .row .col-lg-7 {
@@ -656,7 +694,7 @@ ol>li:before {
     }
 
     .col-lg-7 {
-      padding: 0;
+      padding: 0 20px;
       width: 58.33%;
       float: left;
       text-align: center;
@@ -668,19 +706,24 @@ ol>li:before {
     }
 
     .image {
-      margin: 30px 0;
+      margin: 40px 0;
     }
 
     .divider {
       margin: 40px 0;
     }
+
+    .mockups {
+      margin: -50px 0;
+    }
+
   }
 }
 
 /* CSS animation */
 .berlin-illustration {
   width: 100%;
-  max-width: 480px;
+  max-width: 580px;
   height: auto;
 }
 
