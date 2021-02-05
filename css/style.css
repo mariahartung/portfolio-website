@@ -217,29 +217,24 @@ img {
 }
 
 main {
-  padding-top: 151px;
+  padding-top: 79px;
 }
 
 .logo {
   max-width: 40px;
+  padding-top: 15px;
 }
 
 .wrapper-logo {
-  text-align: center;
-  padding-top: 20px;
+  padding-left: 15px;
+  display: inline-block;
 }
 
 header {
   background-color: #2d3e50;
-  text-align: center;
-  padding: 10px 0;
+  padding: 5px 0 5px;
   box-shadow: 0px 4px 8px 0px rgba(47, 47, 47, 0.3);
   position: fixed;
-  display: inline-block;
-  width: 100%;
-}
-
-nav {
   display: inline-block;
   width: 100%;
 }
@@ -247,10 +242,7 @@ nav {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -269,6 +261,59 @@ nav>ul>li>a:hover {
 
 nav>ul>li>a:active {
   color: #ffdb5a;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  font-size: 32px;
+  padding-right: 15px;
+  color: #ffffff;
+}
+
+.navtoggle .icon .fa-times {
+  display: none;
+}
+
+.navtoggle, .navtoogleresponsive {
+  position: relative;
+}
+
+.navtoggleresponsive nav {
+  padding: 10px 0;
+}
+
+.navtoggleresponsive li {
+  display: block;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.navtoggleresponsive li:last-child {
+  padding: 0;
+}
+
+.navtoggleresponsive a.icon {
+  padding: 0;
+}
+
+.navtoggleresponsive .icon .fa-times {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 20px;
+  font-size: 40px;
+  padding-right: 30px;
+  color: #ffffff;
+}
+
+.navtoggleresponsive .fa-bars {
+  display: none;
 }
 
 #hero {
@@ -522,20 +567,38 @@ ul li {
     margin: 0 auto;
   }
 
+  .logo {
+    padding-top: 0;
+  }
+
   .wrapper-logo {
     display: inline-block;
     text-align: center;
     padding-top: unset;
     margin: 20px 0 0 15px;
     float: left;
-    width: 40px;
-    height: 40px;
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 2px;
+  }
+
+  nav ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   main {
