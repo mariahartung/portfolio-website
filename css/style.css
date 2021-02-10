@@ -117,10 +117,10 @@ a:active {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   background-color: #ffdb5a;
-  padding: 8px 24px;
+  padding: 15px 30px;
   margin-top: 10px;
   border: 1px solid #ffdb5a;
-  border-radius: 28px;
+  border-radius: 40px;
   transition-property: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: linear;
@@ -158,9 +158,9 @@ a:active {
   font-weight: 400;
   color: #ffffff;
   background-color: #2d3e50;
-  padding: 8px 24px;
+  padding: 15px 30px;
   border: 1px solid #ffdb5a;
-  border-radius: 28px;
+  border-radius: 40px;
   transition-property: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: linear;
@@ -184,9 +184,9 @@ a:active {
   font-weight: 400;
   color: #2f2f2f;
   background-color: #ffdb5a;
-  padding: 8px 24px;
+  padding: 15px 30px;
   border: 1px solid #ffdb5a;
-  border-radius: 28px;
+  border-radius: 40px;
   transition-property: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: linear;
