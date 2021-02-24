@@ -34,12 +34,20 @@
   <!-- Main -->
   <main>
     <div>
+      <nav id="dot-nav" style="top: calc(50% -55px);">
+      <a id="dot-0" class="dots active" href="#understand" data-sec="0"></a>
+      <a id="dot-1" class="dots" href="#observe" data-sec="1"></a>
+      <a id="dot-2" class="dots" href="#pov" data-sec="2"></a>
+      <a id="dot-3" class="dots" href="#ideate" data-sec="3"></a>
+      <a id="dot-4" class="dots" href="#prototype" data-sec="4"></a>
+      <a id="dot-5" class="dots" href="#test" data-sec="5"></a>
+      </nav>
       <!-- Hero Section -->
       <div id="hero">
         <div class="container-hero">
           <picture>
-            <source srcset="img/expert/hero_expert2_mobile.jpg" media="(max-width:767px)">
-            <img src="img/expert/hero_expert2_desktop.jpg" alt="hero expert image">
+            <source srcset="img/expert/hero_expert_mobile.jpg" media="(max-width:767px)">
+            <img src="img/expert/hero_expert_desktop.jpg" alt="hero expert image">
           </picture>
         </div>
       </div>
@@ -114,8 +122,9 @@
         </picture>
       </div>
       <!-- Divider -->
+      <section class="in-viewport section-0">
       <div class="divider">
-        <div>
+        <div id="understand">
           <h2>Understand</h2>
         </div>
       </div>
@@ -146,9 +155,11 @@
           </ul>
         </div>
       </div>
+    </section>
       <!-- Divider -->
+    <section class="section-1 in-viewport">
       <div class="divider">
-        <div>
+        <div id="observe">
           <h2>Observe</h2>
         </div>
       </div>
@@ -261,9 +272,11 @@
           </div>
         </div>
       </div>
+    </section>
       <!-- Divider -->
+      <section class="section-2 in-viewport">
       <div class="divider">
-        <div>
+        <div id="pov">
           <h2>POV</h2>
         </div>
       </div>
@@ -288,9 +301,11 @@
           </picture>
         </div>
       </div>
+    </section>
       <!-- Divider -->
+    <section class="section-3 in-viewport">
       <div class="divider">
-        <div>
+        <div id="ideate">
           <h2>Ideate</h2>
         </div>
       </div>
@@ -383,9 +398,11 @@
           </picture>
         </div>
       </div>
+    </section>
       <!-- Divider -->
+    <section class="section-4 in-viewport">
       <div class="divider">
-        <div>
+        <div id="prototype">
           <h2>Prototype</h2>
         </div>
       </div>
@@ -442,9 +459,11 @@
           </picture>
         </div>
       </div>
+    </section>
       <!-- Divider -->
+      <section class="section-5 in-viewport">
       <div class="divider">
-        <div>
+        <div id="test">
           <h2>Test
           </h2>
         </div>
@@ -528,6 +547,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <section>
       <!-- Divider -->
       <div class="divider">
         <div>
@@ -621,8 +642,7 @@
         </p>
       </div>
     </div>
-    </div>
-  </main>
+</main>
   <!-- Footer  -->
   <footer id="contact">
     <div>
@@ -635,13 +655,16 @@
       </div>
       <div class="icons">
         <ul>
-          <li><a href="skype:femfatal86" target="_blank">
-              <i class="fab fa-skype"></i></a></li>
+          <li><a href="tel:+4915126559938" target="_blank">
+              <i class="fas fa-phone-alt"></i></a></li>
           <li><a href="https://www.facebook.com/maria.hartung.52/" target="_blank">
               <i class="fab fa-facebook-f"></i></a></li>
           <li><a href="https://www.instagram.com/_thirdeye/" target="_blank">
               <i class="fab fa-instagram"></i></a></li>
         </ul>
+      </div>
+      <div class="logo-footer">
+        <a href="index.html"><img src="img/Logo_v2.svg" class="logo" alt="Maria Hartung Logo"></a>
       </div>
       <div>
         <a href="impressum.html" class="impressum">Legal Disclosure</a>
@@ -652,7 +675,13 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="dot-nav-min.js"></script>
   <script src="js/scripts.js"></script>
+  <script>
+  $(document).ready(function() {
+      $("html").dotNav('section', 'easeInOutCubic');
+  });
+</script>
 </body>
 
 </html>

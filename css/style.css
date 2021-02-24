@@ -390,6 +390,12 @@ footer a:active {
   max-width: 40px;
 }
 
+.fas {
+  color: #ffffff;
+  font-size: 25px;
+  max-width: 30px;
+}
+
 .center {
   text-align: center;
 }
@@ -514,6 +520,14 @@ ul li {
 .impressum:active {
   color: #ffdb5a;
   text-decoration: underline;
+}
+
+.logo-footer {
+  padding: 10px 0;
+}
+
+.logo-footer .logo {
+  max-width: 45px;
 }
 
 /* medium devices (640px and larger) */
@@ -777,6 +791,34 @@ ul li {
     .mockups {
       margin: -50px 0;
     }
+
+    nav#dot-nav {
+      position: fixed;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+
+    nav#dot-nav a {
+        border: 1px solid #2d3e50;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        display: block;
+        margin: 30px;
+        -webkit-transition: all 0.4;
+        transition: all 0.4; }
+
+    nav#dot-nav a.active {
+      background: #2d3e50; }
+
+    nav#dot-nav.red a {
+        border: 1px solid #db2853; }
+
+        nav#dot-nav.red a.active, nav#dot-nav.red a:first-child {
+          background: #db2853; }
+
+
   }
 }
 
