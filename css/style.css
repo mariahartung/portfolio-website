@@ -390,7 +390,7 @@ footer a:active {
   max-width: 40px;
 }
 
-.fas {
+footer .fas {
   color: #ffffff;
   font-size: 25px;
   max-width: 30px;
@@ -800,25 +800,27 @@ ul li {
     }
 
     nav#dot-nav a {
-        border: 1px solid #2d3e50;
-        border-radius: 50%;
-        width: 14px;
-        height: 14px;
-        display: block;
-        margin: 30px;
-        -webkit-transition: all 0.4;
-        transition: all 0.4; }
+      border: 1px solid #2d3e50;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      display: block;
+      margin: 30px;
+      -webkit-transition: all 0.4;
+      transition: all 0.4s;
+    }
 
     nav#dot-nav a.active {
-      background: #2d3e50; }
+      background: #2d3e50;
+    }
 
     nav#dot-nav.red a {
-        border: 1px solid #db2853; }
+      border: 1px solid #db2853;
+    }
 
-        nav#dot-nav.red a.active, nav#dot-nav.red a:first-child {
-          background: #db2853; }
-
-
+    nav#dot-nav.red a.active, nav#dot-nav.red a:first-child {
+      background: #db2853;
+    }
   }
 }
 
