@@ -10,6 +10,7 @@ yellow (button background): #ffdb5a;
 hover over nav links: #008dd5;
 hover over buttons : #ffd027;
 */
+
 /* typography used:
 primary:
 h3,h4,h5,p,ul,ol,caption,buttons : Lato;
@@ -22,7 +23,7 @@ h1,h2: Raleway;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -40,7 +41,7 @@ h1 {
 }
 
 #index #hero h1 {
-  color: #ffffff;
+  color: #fff;
 }
 
 #impressum h1 {
@@ -57,7 +58,7 @@ h2 {
 }
 
 footer h2 {
-  color: #ffffff;
+  color: #fff;
 }
 
 h3 {
@@ -134,7 +135,7 @@ a:active {
 .button-prototype:focus {
   color: #2f2f2f;
   background-color: #ffd027;
-  box-shadow: 2px 4px 12px 0px rgba(47, 47, 47, 0.3);
+  box-shadow: 2px 4px 12px 0 rgba(47, 47, 47, 0.3);
 }
 
 .button-project:active,
@@ -145,18 +146,13 @@ a:active {
 
 .button-testing {
   margin: 10px 16px 10px 0;
-  display: inline-block;
-}
-
-.button-prototype {
-  display: inline-block;
 }
 
 .button-contact {
   display: inline-block;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
   background-color: #2d3e50;
   padding: 15px 30px;
   border: 1px solid #ffdb5a;
@@ -170,7 +166,7 @@ a:active {
 .button-contact:focus {
   color: #2f2f2f;
   background-color: #ffd027;
-  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.5);
 }
 
 .button-contact:active {
@@ -196,7 +192,7 @@ a:active {
 .button-cv:focus {
   color: #2f2f2f;
   background-color: #ffd027;
-  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
 .button-cv:active {
@@ -207,7 +203,9 @@ img {
   width: 100%;
 }
 
-/*Layout styling*/
+/*
+Layout styling
+*/
 .container {
   padding: 0 15px;
 }
@@ -232,34 +230,34 @@ main {
 
 header {
   background-color: #2d3e50;
-  padding: 5px 0 5px;
-  box-shadow: 0px 4px 8px 0px rgba(47, 47, 47, 0.3);
+  padding: 5px 0;
+  box-shadow: 0 4px 8px 0 rgba(47, 47, 47, 0.3);
   position: fixed;
   display: inline-block;
   width: 100%;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
-  color: #ffffff;
+nav > ul > li > a {
+  color: #fff;
   padding: 0 15px;
   text-transform: uppercase;
 }
 
-nav>ul>li>a:visited {
-  color: #ffffff;
+nav > ul > li > a:visited {
+  color: #fff;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   color: #ffdb5a;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   color: #ffdb5a;
 }
 
@@ -273,14 +271,15 @@ nav>ul>li>a:active {
   top: 14px;
   font-size: 32px;
   padding-right: 15px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .navtoggle .icon .fa-times {
   display: none;
 }
 
-.navtoggle, .navtoogleresponsive {
+.navtoggle,
+.navtoogleresponsive {
   position: relative;
 }
 
@@ -309,7 +308,7 @@ nav>ul>li>a:active {
   top: 20px;
   font-size: 40px;
   padding-right: 30px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .navtoggleresponsive .fa-bars {
@@ -318,7 +317,7 @@ nav>ul>li>a:active {
 
 #hero {
   background-color: #2d3e50;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   padding: 50px 0;
   display: inline-block;
@@ -346,7 +345,7 @@ nav>ul>li>a:active {
 
 footer {
   background-color: #2d3e50;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   padding: 20px 0;
   display: inline-block;
@@ -368,7 +367,7 @@ footer ul li a {
 }
 
 footer a:visited {
-  color: #ffffff;
+  color: #fff;
 }
 
 footer a:hover,
@@ -385,13 +384,13 @@ footer a:active {
 }
 
 .fab {
-  color: #ffffff;
+  color: #fff;
   font-size: 25px;
   max-width: 40px;
 }
 
 footer .fas {
-  color: #ffffff;
+  color: #fff;
   font-size: 25px;
   max-width: 30px;
 }
@@ -409,7 +408,7 @@ footer .fas {
 }
 
 #about #hero {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 10px 0;
 }
 
@@ -435,12 +434,12 @@ footer .fas {
 }
 
 #expert #hero {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 0;
 }
 
 .container-hero {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 0;
 }
 
@@ -470,7 +469,7 @@ footer .fas {
 }
 
 #worldup #hero {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 0;
 }
 
@@ -491,25 +490,27 @@ ul li {
 }
 
 #index .underline-work {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
 }
 
 #about .underline-about {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
 }
 
-/*Layout styling End*/
+/*
+Layout styling End
+*/
 #impressum-content {
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
 .impressum {
-  color: #ffffff;
+  color: #fff;
 }
 
 .impressum:visited {
-  color: #ffffff;
+  color: #fff;
 }
 
 .impressum:hover,
@@ -586,7 +587,6 @@ ul li {
   }
 
   .wrapper-logo {
-    display: inline-block;
     text-align: center;
     padding-top: unset;
     margin: 20px 0 0 15px;
@@ -603,7 +603,7 @@ ul li {
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -620,7 +620,6 @@ ul li {
   }
 
   #hero span {
-    display: block;
     font-size: 28px;
   }
 
@@ -631,7 +630,7 @@ ul li {
     display: table;
   }
 
-  .row:after {
+  .row::after {
     content: "";
     clear: both;
     display: table;
@@ -791,96 +790,5 @@ ul li {
     .mockups {
       margin: -50px 0;
     }
-
-    nav#dot-nav {
-      position: fixed;
-      right: 30px;
-      top: 50%;
-      transform: translateY(-50%)
-    }
-
-    nav#dot-nav a {
-      border: 1px solid #2d3e50;
-      border-radius: 50%;
-      width: 14px;
-      height: 14px;
-      display: block;
-      margin: 30px;
-      -webkit-transition: all 0.4;
-      transition: all 0.4s;
-    }
-
-    nav#dot-nav a.active {
-      background: #2d3e50;
-    }
-
-    nav#dot-nav.red a {
-      border: 1px solid #db2853;
-    }
-
-    nav#dot-nav.red a.active, nav#dot-nav.red a:first-child {
-      background: #db2853;
-    }
   }
-}
-
-/* CSS animation */
-.berlin-illustration {
-  width: 100%;
-  max-width: 580px;
-  height: auto;
-}
-
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-
-  to {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation-name: color-change;
-  animation-direction: alternate;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation-name: cloud-move;
-  animation-direction: alternate;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation-name: cloud-move-reverse;
-  animation-direction: alternate;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
