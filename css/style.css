@@ -37,11 +37,13 @@ h1 {
   font-weight: 600;
   line-height: 1.3;
   color: #2f2f2f;
+  background-color: inherit;
   text-align: center;
 }
 
 #index #hero h1 {
   color: #fff;
+  background-color: inherit;
 }
 
 #impressum h1 {
@@ -54,11 +56,13 @@ h2 {
   font-weight: 700;
   line-height: 1.3;
   color: #2f2f2f;
+  background-color: inherit;
   text-align: center;
 }
 
 footer h2 {
   color: #fff;
+  background-color: inherit;
 }
 
 h3 {
@@ -67,6 +71,7 @@ h3 {
   font-weight: 700;
   line-height: 1.4;
   color: #2f2f2f;
+  background-color: inherit;
 }
 
 h4 {
@@ -75,6 +80,7 @@ h4 {
   font-weight: 700;
   line-height: 1.4;
   color: #2f2f2f;
+  background-color: inherit;
 }
 
 h5 {
@@ -83,6 +89,7 @@ h5 {
   font-weight: 700;
   line-height: 1.6;
   color: #2f2f2f;
+  background-color: inherit;
 }
 
 .project-title {
@@ -95,20 +102,24 @@ a {
   font-weight: 500;
   line-height: 1.4;
   color: #2f2f2f;
+  background-color: inherit;
   text-decoration: none;
 }
 
 a:visited {
   color: #2f2f2f;
+  background-color: inherit;
 }
 
 a:hover,
 a:focus {
   color: #008dd5;
+  background-color: inherit;
 }
 
 a:active {
   color: #2d3e50;
+  background-color: inherit;
 }
 
 .button-project,
@@ -117,6 +128,7 @@ a:active {
   display: inline-block;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  color: #2f2f2f;
   background-color: #ffdb5a;
   padding: 15px 30px;
   margin-top: 10px;
@@ -142,6 +154,7 @@ a:active {
 .button-testing:active,
 .button-prototype:active {
   color: #2f2f2f;
+  background-color: inherit;
 }
 
 .button-testing {
@@ -197,6 +210,7 @@ a:active {
 
 .button-cv:active {
   color: #2f2f2f;
+  background-color: inherit;
 }
 
 img {
@@ -229,6 +243,7 @@ main {
 }
 
 header {
+  color: inherit;
   background-color: #2d3e50;
   padding: 5px 0;
   box-shadow: 0 4px 8px 0 rgba(47, 47, 47, 0.3);
@@ -245,20 +260,24 @@ nav > ul {
 
 nav > ul > li > a {
   color: #fff;
+  background-color: inherit;
   padding: 0 15px;
   text-transform: uppercase;
 }
 
 nav > ul > li > a:visited {
   color: #fff;
+  background-color: inherit;
 }
 
 nav > ul > li > a:hover {
   color: #ffdb5a;
+  background-color: inherit;
 }
 
 nav > ul > li > a:active {
   color: #ffdb5a;
+  background-color: inherit;
 }
 
 .navtoggle li:not(:last-child) {
@@ -272,6 +291,7 @@ nav > ul > li > a:active {
   font-size: 32px;
   padding-right: 15px;
   color: #fff;
+  background-color: inherit;
 }
 
 .navtoggle .icon .fa-times {
@@ -309,6 +329,7 @@ nav > ul > li > a:active {
   font-size: 40px;
   padding-right: 30px;
   color: #fff;
+  background-color: inherit;
 }
 
 .navtoggleresponsive .fa-bars {
@@ -368,15 +389,18 @@ footer ul li a {
 
 footer a:visited {
   color: #fff;
+  background-color: inherit;
 }
 
 footer a:hover,
 footer a:focus {
   color: #ffdb5a;
+  background-color: inherit;
 }
 
 footer a:active {
   color: #ffdb5a;
+  background-color: inherit;
 }
 
 .icons {
@@ -385,12 +409,14 @@ footer a:active {
 
 .fab {
   color: #fff;
+  background-color: inherit;
   font-size: 25px;
   max-width: 40px;
 }
 
 footer .fas {
   color: #fff;
+  background-color: inherit;
   font-size: 25px;
   max-width: 30px;
 }
@@ -408,6 +434,7 @@ footer .fas {
 }
 
 #about #hero {
+  color: inherit;
   background-color: #fff;
   padding: 10px 0;
 }
@@ -434,16 +461,19 @@ footer .fas {
 }
 
 #expert #hero {
+  color: inherit;
   background-color: #fff;
   padding: 0;
 }
 
 .container-hero {
+  color: inherit;
   background-color: #fff;
   padding: 0;
 }
 
 .divider {
+  color: inherit;
   background-color: #f0f0f0;
   text-align: center;
   padding: 10px 0;
@@ -469,6 +499,7 @@ footer .fas {
 }
 
 #worldup #hero {
+  color: inherit;
   background-color: #fff;
   padding: 0;
 }
@@ -507,19 +538,23 @@ Layout styling End
 
 .impressum {
   color: #fff;
+  background-color: inherit;
 }
 
 .impressum:visited {
   color: #fff;
+  background-color: inherit;
 }
 
 .impressum:hover,
 .impressum:focus {
   color: #ffdb5a;
+  background-color: inherit;
 }
 
 .impressum:active {
   color: #ffdb5a;
+  background-color: inherit;
   text-decoration: underline;
 }
 
