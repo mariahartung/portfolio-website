@@ -102,24 +102,20 @@ a {
   font-weight: 500;
   line-height: 1.4;
   color: #2f2f2f;
-  background-color: inherit;
   text-decoration: none;
 }
 
 a:visited {
   color: #2f2f2f;
-  background-color: inherit;
 }
 
 a:hover,
 a:focus {
   color: #008dd5;
-  background-color: inherit;
 }
 
 a:active {
   color: #2d3e50;
-  background-color: inherit;
 }
 
 .button-project,
@@ -154,7 +150,6 @@ a:active {
 .button-testing:active,
 .button-prototype:active {
   color: #2f2f2f;
-  background-color: inherit;
 }
 
 .button-testing {
@@ -210,7 +205,6 @@ a:active {
 
 .button-cv:active {
   color: #2f2f2f;
-  background-color: inherit;
 }
 
 img {
@@ -229,16 +223,15 @@ Layout styling
 }
 
 main {
-  padding-top: 79px;
+  padding-top: 81px;
 }
 
 .logo {
   max-width: 40px;
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .wrapper-logo {
-  padding-left: 15px;
   display: inline-block;
 }
 
@@ -261,7 +254,6 @@ nav > ul {
 nav > ul > li > a {
   color: #fff;
   background-color: inherit;
-  padding: 0 15px;
   text-transform: uppercase;
 }
 
@@ -623,8 +615,9 @@ Layout styling End
 
   .wrapper-logo {
     text-align: center;
-    padding-top: unset;
-    margin: 20px 0 0 15px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 18px;
     float: left;
   }
 
@@ -648,6 +641,10 @@ Layout styling End
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
   }
 
   main {
@@ -735,6 +732,10 @@ Layout styling End
       font-size: 20px;
     }
 
+    main {
+      padding-top: 92px;
+    }
+
     h1 {
       font-size: 36px;
     }
@@ -757,6 +758,15 @@ Layout styling End
 
     h5 {
       font-size: 22px;
+    }
+
+    .logo {
+      padding-top: 2px;
+    }
+
+    .wrapper-logo {
+      padding-left: 10px;
+      margin-top: 19px;
     }
 
     #hero {
