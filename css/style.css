@@ -10,7 +10,6 @@ yellow (button background): #ffdb5a;
 hover over nav links: #008dd5;
 hover over buttons : #ffd027;
 */
-
 /* typography used:
 primary:
 h3,h4,h5,p,ul,ol,caption,buttons : Lato;
@@ -245,29 +244,29 @@ header {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   color: #fff;
   background-color: inherit;
   text-transform: uppercase;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #fff;
   background-color: inherit;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   color: #ffdb5a;
   background-color: inherit;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: #ffdb5a;
   background-color: inherit;
 }
@@ -631,7 +630,7 @@ Layout styling End
     margin: 1em 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
@@ -643,7 +642,7 @@ Layout styling End
     display: none;
   }
 
-  nav > ul > li > a {
+  nav>ul>li>a {
     padding: 0 15px;
   }
 
@@ -834,6 +833,27 @@ Layout styling End
 
     .mockups {
       margin: -50px 0;
+    }
+
+    #dot-nav {
+      position: fixed;
+      right: 30px;
+      top: 50%;
+      transform: translateY(35%);
+    }
+
+    #dot-nav a {
+      border: 1px solid #2d3e50;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      display: block;
+      margin: 30px;
+      transition: all 0.4s;
+    }
+
+    #dot-nav a.active {
+      background: #2d3e50;
     }
   }
 }
