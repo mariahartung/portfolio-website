@@ -21,6 +21,10 @@ h1,h2: Raleway;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff;
   font-family: 'Lato', sans-serif;
@@ -412,6 +416,10 @@ footer .fas {
   max-width: 30px;
 }
 
+.copyright {
+  font-size: 14px;
+}
+
 .center {
   text-align: center;
 }
@@ -421,7 +429,7 @@ footer .fas {
 }
 
 #contact .center {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 #about #hero {
@@ -530,6 +538,7 @@ Layout styling End
 .impressum {
   color: #fff;
   background-color: inherit;
+  font-size: 14px;
 }
 
 .impressum:visited {

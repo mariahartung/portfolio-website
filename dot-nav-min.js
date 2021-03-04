@@ -67,5 +67,5 @@ const dotNav = (e, t) => {
 };
 
 $(document).ready(function() {
-  dotNav("section", "easeInOutCubic")
+  dotNav("section", "easeInOutCubic");
 });
