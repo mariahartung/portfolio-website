@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://kit.fontawesome.com/e32f73a6fe.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Portfolio Website</title>
+</head>
+
+<body id="worldup">
+  <nav id="dot-nav"></nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="wrapper-logo">
+          <a href="index.html"><img src="img/Logo_v2.svg" class="logo" alt="Maria Hartung Logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><span class="underline-work">Work</span></a></li>
+            <li><a href="about.html"><span class="underline-about">About</span></a></li>
+            <li><a href="#contact"><span class="underline-contact" onclick="menuToggle()">Contact</span></a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i><i class="fas fa-times"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <div>
+      <section class="in-viewport section-0">
+        <!-- Hero Section -->
+        <div id="hero">
+          <div class="container-hero">
+            <picture>
+              <source srcset="img/portfolio/hero_mobile.jpg" media="(max-width:767px)">
+              <img src="img/portfolio/hero_desktop.jpg" alt="hero portfolio image">
+            </picture>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h1>Portfolio Website</h1>
+            <h3>Overview</h3>
+            <p>As part of my frontend specialization course by CareerFoundry, I had the chance to gain first-hand coding experience by building a responsive portfolio website from scratch.
+              The goal of this project was to build the site using HTML, CSS, and JavaScript to showcase my design work to employers and my professional network.
+            </p>
+            <h3>Challenge</h3>
+            <h4>"How might we build a responsive portfolio site from scratch to present our work to employers in a unique way?"
+            </h4>
+            <p>A custom portfolio website is a great way for any designer to stand out from the crowd.
+              Unlike Behance and Dribbble, it can offer unlimited creative possibilities to present your work online and to
+              create a good user experience for potential visitors.</p>
+            <p>Although I already had a portfolio on uxfol.io before, the customization options were limited in terms of structure, layout, typography, and colors.
+              I needed a portfolio website that is easy to maintain and customize, to present my work to employers in order to attract new job opportunities.
+            </p>
+            <h3>Process</h3>
+            <p>During the project, I went from defining the HTML structure, applying CSS styling for different screen sizes, to user testing,
+              code quality assurance, and publishing the site on GitHub pages. In the end, I had a responsive portfolio site ready to be used as the main outlet of my work online.
+            </p>
+            <h3>Goals</h3>
+            <ul>
+              <li>Build a responsive website to present my work in a simple, intuitive, and visually appealing way so that it looks good across devices. </li>
+              <li>Offer potential employers a way to easily find, view my work, and contact me.</li>
+              <li>Being able to customize the portfolio website through basic knowledge of HTML, CSS, and JavaScript.</li>
+            </ul>
+            <p><b>Timeline:</b> November 2020 - March 2021
+            </p>
+            <p><b>Role:</b> Sole Frontend Developer and Designer
+            </p>
+            <p><b>Tools:</b> Atom, Github, W3C Markup Validation Service
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-1">
+        <div class="divider">
+          <div>
+            <h2>Design</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Content-first strategy</h3>
+            <p>First, I started to gather assets and create the content for each portfolio page to focus on the development of the site for the rest of the course.
+              I created optimized images for mobile and desktop with reduced file size and resolution for faster loading times on the site and
+              optimal user experience across devices.
+            </p>
+            <h4>Defining the Visual Style</h4>
+            <p> To decide on the visual style of the website, I defined the color palette, typography and created a logo to represent my brand.
+              For a consistent look, I chose a subdued color palette of blue and yellow tones, that is easy on the eyes and
+              creates a welcoming mood for visitors. Blue represents professionalism and yellow stands for taking risks to try new things.
+            </p>
+            <p>For typography, I selected the google fonts Raleway and Lato, because they are easily accessible, readable, and modern.
+              To create a logo that´s simple and easily recognizable, I merged the letters of my name into one.
+            </p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/portfolio/styleguide_mobile.png" media="(max-width:767px)">
+              <img src="img/portfolio/styleguide_desktop.png" alt="Styleguide image">
+            </picture>
+          </div>
+        </div>
+    </div>
+    </section>
+    <!-- Divider -->
+    <section class="section-2">
+      <div class="divider">
+        <div>
+          <h2>Development</h2>
+        </div>
+      </div>
+      <!-- Divider End -->
+      <div class="container">
+        <div class="wrapper">
+          <h3>Building the HTML Structure</h3>
+          <p>After the content was prepared, I moved on to the development of the portfolio site.
+            I started by creating an HTML structure for the header, body, and footer section for the homepage, about, and project pages. This would serve as a skeleton to hold my content.</p>
+          <p>Using the wireframes from the brief as a guide, I built the main part of my HTML pages using div containers to have more control
+            over styling and layout in CSS later. At this stage placeholder images were used, which were later
+            replaced with real images using the picture tag, so they can be displayed at optimal size on mobile and desktop.
+          </p>
+          <p><b>Work section on the homepage structured with div elements</b>
+          </p>
+        </div>
+        <div class="image">
+          <picture>
+            <source srcset="img/portfolio/html_structure_mobile.png" media="(max-width:767px)">
+            <img src="img/portfolio/html_structure_desktop.png" alt="HTML structure">
+          </picture>
+        </div>
+        <div class="wrapper">
+          <h3>Applying CSS Styling</h3>
+          <p> With the HTML structure in place, it was time to apply some CSS styling to add a personal flair to the site.
+            CSS stands for cascading style sheet and controls how HTML is presented in the browser.
+          </p>
+          <p>First I embedded the google fonts I had decided on earlier and defined text styling such as font-sizes, font-weight, line-height for h1-h5 headings, and body text.
+            Afterwards, I also applied colors and added link styling for different states to give my website the intended look and feel.
+          </p>
+          <p><b>Link styling for different states</b>
+          <div class="image">
+            <picture>
+              <source srcset="img/portfolio/link_mobile.png" media="(max-width:767px)">
+              <img src="img/portfolio/link_desktop.png" alt="Link styling snippet">
+            </picture>
+          </div>
+          </p>
+          <h4>Button Styling</h4>
+          <p>I also made use of transition effects on buttons to make them more accessible and interactive for users.
+            CSS transition defines the animation between a start and end state.
+            I used them to create a smooth transition for drop shadows on buttons upon hover.
+          </p>
+          <p><b>Button styling with transitions</b>
+          </p>
+          <div>
+            <picture>
+              <source srcset="img/portfolio/button_mobile.png" media="(max-width:767px)">
+              <img src="img/portfolio/button_desktop.png" alt="Button styling snippet">
+            </picture>
+          </div>
+          <p>
+          <h4>Adjusting the Layout with Media Queries</h4>
+          <p>To create the layout for the homepage, about and project pages I followed the wireframes provided in the brief. I made use of a 12-column grid and
+            adjusted the layout for medium and larger screen sizes with media queries. Media queries allow for writing code that will only affect the layout up, to or from a defined breakpoint.
+            I used them to adjust the spacing between columns for larger screen sizes and to define font-sizes for h1-h5 headings for better readability on tablet and desktop.
+          </p>
+          <p><b>Styling of font-sizes with media queries</b>
+          <div class="image">
+            <picture>
+              <source srcset="img/portfolio/media_mobile.png" media="(max-width:767px)">
+              <img src="img/portfolio/media_desktop.png" alt="media queries">
+            </picture>
+          </div>
+          <p>To check the layout and styling for different viewports, I heavily relied on the "inspect" mode in google chrome to see the results of my changes and
+            do some troubleshooting when the positioning of elements was off.
+          </p>
+          <h3>Adding Interactivity with Javascript</h3>
+          <p> Next, I used Javascript to add some interactivity to my website by adding a mobile menu, that could be toggled on and off on click.
+            The menu should allow users to navigate the site more easily on mobile devices.
+            The challenge here was to keep the navigation bar for tablet and desktop and make the toggle menu only work on mobile.
+          </p>
+          <div class="menu">
+            <picture>
+              <source srcset="img/portfolio/menu_mobile.png" media="(max-width:767px)">
+              <img src="img/portfolio/menu_desktop.png" alt="Mobile menu">
+            </picture>
+          </div>
+          <p>During this phase, I had the issue that the menu still showed up in tablet and desktop view.
+            After some experimentation and research on StackOverflow, I solved the issue by adding media queries to the JavaScript code.
+          </p>
+          <p><b>JavaScript code to make the toggle menu work</b>
+          </p>
+          <div class="image">
+            <picture>
+              <source srcset="img/portfolio/JS_mobile.png" media="(max-width:767px)">
+              <img src="img/portfolio/JS_desktop.png" alt="JavaScript snippet ">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <section class="section-3">
+      <div class="divider">
+        <div>
+          <h2>User Testing</h2>
+        </div>
+      </div>
+      <!-- Divider End -->
+      <div class="container">
+        <div class="wrapper">
+          <h3>User Testing</h3>
+          <p>Now that the first iteration of the site was complete, I conducted a moderated user test with 6 participants via skype. The testing was important to find iron out any usability issues on the site.</p>
+          <p>The main challenge here was to find suitable participants. Recruitment over Slack and Reddit took longer than expected.
+            Due to a lack of responses from hiring managers on Reddit, I adjusted my recruitment criteria to "anyone with experience of reviewing designers' portfolios as part of a hiring process".
+            This opened up the pool of target users and enabled me to find suitable participants for testing sessions.
+          </p>
+          <h4>Main Goals</h4>
+          <p>The goal of the user testing was to find out:
+          </p>
+          <ul>
+            <li>How easy is it for first-time users to complete basic tasks on the site?</li>
+            <li>Can users find the information they´re looking for easily?</li>
+            <li>What errors occur frequently and how severe are they?</li>
+          </ul>
+          <p>Issues were rated based on Jakob Nielsen´s rating scale and ranked by severity and effort.
+          </p>
+        </div>
+        <div class="wrapper">
+          <h4>Key Findings</h4>
+          <p>Most users found the site intuitive, simple, and easy to navigate.
+            They could easily find my resume, learn more about projects and contact me. The only major issue encountered by all users was
+            long scrolling on lengthy project pages with no option to navigate to different sections they were interested in.
+          </p>
+          <h4>Change</h4>
+          <p>To address the issue of long scrolling on project pages, I added a jQuery plugin for a dot navigation you can see on the right side of this page.
+            This allows users to navigate to different parts of the case study more easily.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <section class="section-4">
+      <div class="divider">
+        <div>
+          <h2>Final Solution</h2>
+        </div>
+      </div>
+      <div class="mockups">
+        <picture>
+          <source srcset="img/portfolio/mockup_mobile.jpg" media="(max-width:767px)">
+          <img src="img/portfolio/mockup_desktop.jpg" alt="Mockups of the final product">
+        </picture>
+      </div>
+    </section>
+    <!-- Divider -->
+    <section class="section-5">
+      <div class="divider">
+        <div>
+          <h2>Reflection</h2>
+        </div>
+      </div>
+      <!-- Divider End -->
+      <div class="container">
+        <div class="wrapper-learnings">
+          <h3>Solution</h3>
+          <p>My main goal was to build a responsive website that is easy to customize to present my work to potential employers.
+            Through learning HTML, CSS, and JavaScript, I could accomplish this and create a portfolio website with
+            simple aesthetics that is easy to navigate and offers users quick access to projects, my resume, and the contact section.
+          </p>
+          <h4>What went well</h4>
+          <p>Working on this project has been a rewarding experience. I enjoyed to see the website come to life with every bit of code
+            I added. During the process of experimentation, user testing, and iterations, I learned how solutions can be implemented with
+            HTML, CSS, and JavaScript. I also gained a better understanding of working with grids.
+            This will help me to consider technical feasibility when making design decisions and collaborating with developers in the future.
+          </p>
+          <h4>What didn't go well</h4>
+          <p>I fell a bit behind schedule due to the recruitment of user testing participants.
+            When working on other projects in the future, I will plan more time for recruitment and have a flexible recruitment criteria to start.
+          </p>
+          <h4>What could be improved</h4>
+          <p>As the site will be a work in progress, I will continue to make changes over time.
+            I plan to add a custom domain for better findability and add more projects to the site.
+            As the number of projects will increase, I also want to experiment with a different layout for the work section on the homepage.
+          </p>
+          <p>For an in-depth view of the latest changes made to the site, check out the GitHub repository here:
+          <div>
+            <a href="https://github.com/mariahartung/portfolio-website" class="button-project">View Repository</a>
+          </div>
+          </p>
+    </section>
+    </div>
+    </div>
+    </div>
+  </main>
+  <!-- Footer  -->
+  <footer id="contact">
+    <div class"container">
+      <h2>Get in Touch</h2>
+      <p>
+        If you like my work, want to learn more or discuss opportunities, please get in touch.
+      </p>
+      <div class="center">
+        <a href="mailto:mariahartung86@gmail.com" class="button-contact">Send Email</a>
+      </div>
+      <div>
+        <a href="impressum.html" class="impressum">Legal Disclosure</a>
+        <p class="copyright">
+          © Maria Hartung 2020-2021
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="dot-nav-min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -527,6 +527,11 @@ ul li {
   border-bottom: 2px solid #fff;
 }
 
+.menu {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
 /*
 Layout styling End
 */
@@ -686,6 +691,17 @@ Layout styling End
 
   #work img {
     max-width: 580px;
+  }
+
+  #hero img {
+    max-width: 770px;
+    padding: 40px 0;
+  }
+
+  .menu {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 
   #about-me h3 {
