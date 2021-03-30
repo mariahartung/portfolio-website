@@ -487,6 +487,12 @@ footer .fas {
   margin: 20px 0;
 }
 
+.image-users {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .prototype {
   padding-top: 10px;
   padding-bottom: 20px;
@@ -850,6 +856,10 @@ Layout styling End
 
     .image {
       margin: 40px 0;
+    }
+
+    .image-users {
+      margin: 40px auto;
     }
 
     .divider {
