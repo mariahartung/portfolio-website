@@ -2,7 +2,7 @@
 primary:
 white (background, button text) : #ffffff;
 black (text, button text): #2f2f2f;
-grey (dividers): #f0f0f0;
+grey (dividers): #f2f3f4;
 blue (hero background, footer background): #2d3e50;
 
 secondary:
@@ -37,7 +37,7 @@ body {
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
   color: #2f2f2f;
   background-color: inherit;
@@ -47,6 +47,7 @@ h1 {
 #index #hero h1 {
   color: #fff;
   background-color: inherit;
+  font-weight: 600;
 }
 
 #impressum h1 {
@@ -248,29 +249,29 @@ header {
   width: 100%;
 }
 
-nav>ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav ul li a {
   color: #fff;
   background-color: inherit;
   text-transform: uppercase;
 }
 
-nav>ul>li>a:visited {
+nav ul li a:visited {
   color: #fff;
   background-color: inherit;
 }
 
-nav>ul>li>a:hover {
+nav ul li a:hover {
   color: #ffdb5a;
   background-color: inherit;
 }
 
-nav>ul>li>a:active {
+nav ul li a:active {
   color: #ffdb5a;
   background-color: inherit;
 }
@@ -454,6 +455,11 @@ footer .fas {
   margin-bottom: 27px;
 }
 
+.selfie {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 #expert .container {
   display: inline-block;
   width: 100%;
@@ -473,7 +479,7 @@ footer .fas {
 
 .divider {
   color: inherit;
-  background-color: #f0f0f0;
+  background-color: #f2f3f4;
   text-align: center;
   padding: 10px 0;
   margin: 15px 0;
@@ -514,7 +520,7 @@ footer .fas {
 }
 
 .wrapper-learnings {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 ul li {
@@ -525,7 +531,7 @@ ul li {
   margin: 20px 0;
 }
 
-#index .underline-work {
+#index .underline-index {
   border-bottom: 2px solid #fff;
 }
 
@@ -544,6 +550,7 @@ Layout styling End
 #impressum-content {
   margin-top: 30px;
   margin-bottom: 20px;
+  padding-left: 5px;
 }
 
 .impressum {
@@ -575,6 +582,10 @@ Layout styling End
 
 .logo-footer .logo {
   max-width: 45px;
+}
+
+.design-thinking {
+  padding: 20px 0;
 }
 
 /* medium devices (640px and larger) */
@@ -610,10 +621,13 @@ Layout styling End
   header {
     text-align: unset;
     padding: 5px 0;
+    width: 100%;
+    min-height: 84px;
   }
 
   header .container {
     display: block;
+    width: 100%;
   }
 
   #expert header .container {
@@ -644,14 +658,17 @@ Layout styling End
     width: auto;
     float: right;
     margin-top: 2px;
+    min-height: 72px;
   }
 
   nav ul {
     margin: 1em 0;
+    min-height: 36px;
   }
 
-  nav>ul>li {
+  nav ul li {
     display: inline-block;
+    min-height: 36px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -662,7 +679,7 @@ Layout styling End
     display: none;
   }
 
-  nav>ul>li>a {
+  nav ul li a {
     padding: 0 15px;
   }
 
@@ -697,11 +714,6 @@ Layout styling End
 
   #work img {
     max-width: 580px;
-  }
-
-  #hero img {
-    max-width: 770px;
-    padding: 40px 0;
   }
 
   .menu {
@@ -756,6 +768,12 @@ Layout styling End
     margin: 0 auto;
   }
 
+  .design-thinking {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
   /* large devices (1024px and larger) */
   @media only screen and (min-width: 1024px) {
     body {
@@ -763,7 +781,7 @@ Layout styling End
     }
 
     main {
-      padding-top: 92px;
+      padding-top: 91px;
     }
 
     h1 {
@@ -801,6 +819,12 @@ Layout styling End
 
     #hero {
       padding: 60px 0;
+    }
+
+    #hero img {
+      max-width: 770px;
+      padding-bottom: 5px;
+      padding-top: 40px;
     }
 
     #work {
@@ -852,6 +876,8 @@ Layout styling End
 
     .center.resume-button {
       text-align: left;
+      padding-top: 10px;
+      padding-bottom: 30px;
     }
 
     .image {
@@ -889,6 +915,10 @@ Layout styling End
 
     #dot-nav a.active {
       background: #2d3e50;
+    }
+
+    #impressum-content {
+      padding-left: 15px;
     }
   }
 }
