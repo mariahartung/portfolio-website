@@ -493,7 +493,7 @@ footer .fas {
 .image {
   margin: 0 auto;
   max-width: 100%;
-  padding: 15px 15px;
+  padding: 15px;
 }
 
 .image-users {
@@ -555,8 +555,8 @@ b {
 Layout styling End
 */
 #impressum-content {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding-left: 5px;
 }
 
@@ -564,6 +564,7 @@ Layout styling End
   color: #fff;
   background-color: inherit;
   font-size: 14px;
+  padding: 0 5px;
 }
 
 .impressum:visited {
@@ -795,10 +796,7 @@ Layout styling End
   }
 
   #solution .col-md-6 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0;
-    padding-right: 20px;
+    padding: 20px 20px 20px 0;
   }
 
   .gif {
@@ -915,10 +913,7 @@ Layout styling End
     }
 
     #solution .col-lg-6 {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 0;
-      padding-right: 40px;
+      padding: 20px 40px 20px 0;
     }
 
     .gif {
