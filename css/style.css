@@ -300,7 +300,7 @@ nav ul li a:active {
 }
 
 .navtoggleresponsive nav {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .navtoggleresponsive li {
@@ -336,7 +336,7 @@ nav ul li a:active {
   background-color: #2d3e50;
   color: #fff;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0;
   padding-bottom: 40px;
   display: inline-block;
   width: 100%;
