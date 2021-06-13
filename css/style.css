@@ -28,7 +28,7 @@ html {
 body {
   background-color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   color: #2f2f2f;
@@ -36,7 +36,7 @@ body {
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
   color: #2f2f2f;
@@ -227,7 +227,7 @@ Layout styling
 }
 
 main {
-  padding-top: 81px;
+  padding-top: 80px;
 }
 
 .logo {
@@ -305,7 +305,7 @@ nav ul li a:active {
 
 .navtoggleresponsive li {
   display: block;
-  padding: 10px 0;
+  padding: 8px 0;
   font-size: 18px;
 }
 
@@ -349,16 +349,17 @@ nav ul li a:active {
 }
 
 #hero p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #work {
-  margin: 50px 0;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 #work .row {
-  padding: 10px 0;
-  margin: 30px 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 #work .row .full-width {
@@ -527,6 +528,14 @@ footer .fas {
   padding-top: 0;
 }
 
+#expert h1 {
+  margin-top: 30px;
+}
+
+#worldup h1 {
+  margin-top: 30px;
+}
+
 .wrapper-learnings {
   margin-bottom: 50px;
 }
@@ -609,10 +618,36 @@ Layout styling End
   padding: 20px 0;
 }
 
+.project-type {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.project-title {
+  font-size: 22px;
+  margin: 0;
+}
+
+.project-type {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.col-sm-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+}
+
 /* medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h1 {
@@ -624,7 +659,7 @@ Layout styling End
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   #index h3 {
@@ -632,11 +667,11 @@ Layout styling End
   }
 
   h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   header {
@@ -671,7 +706,7 @@ Layout styling End
     text-align: center;
     padding-top: 0;
     padding-left: 5px;
-    margin-top: 18px;
+    margin-top: 16px;
     float: left;
   }
 
@@ -685,6 +720,7 @@ Layout styling End
   nav ul {
     margin: 1em 0;
     min-height: 36px;
+    padding-right: 15px;
   }
 
   nav ul li {
@@ -702,6 +738,7 @@ Layout styling End
 
   nav ul li a {
     padding: 0 15px;
+    font-size: 18px;
   }
 
   main {
@@ -718,7 +755,7 @@ Layout styling End
   }
 
   #hero p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .col-md-6 {
@@ -728,6 +765,10 @@ Layout styling End
     display: table;
   }
 
+  #index .full-width {
+    padding-right: 20px;
+  }
+
   .row::after {
     content: "";
     clear: both;
@@ -735,11 +776,11 @@ Layout styling End
   }
 
   #work {
-    margin: 60px 0;
+    margin: 40px 0;
   }
 
   #work .row {
-    margin: 50px 0;
+    margin: 40px 0;
   }
 
   #work img {
@@ -779,6 +820,14 @@ Layout styling End
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 30px;
+  }
+
+  #expert h1 {
+    margin-top: 40px;
+  }
+
+  #worldup h1 {
+    margin-top: 40px;
   }
 
   .divider {
@@ -846,10 +895,32 @@ Layout styling End
     display: table;
   }
 
+  .project-title {
+    font-size: 22px;
+  }
+
+  .project-type {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .project-description {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .col-sm-4 {
+    padding: unset;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+
   /* large devices (1024px and larger) */
   @media only screen and (min-width: 1024px) {
     body {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     main {
@@ -857,11 +928,11 @@ Layout styling End
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 34px;
     }
 
     h2 {
-      font-size: 34px;
+      font-size: 32px;
     }
 
     #about-me .row h2 {
@@ -873,11 +944,11 @@ Layout styling End
     }
 
     h4 {
-      font-size: 24px;
+      font-size: 22px;
     }
 
     h5 {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     .logo {
@@ -886,7 +957,15 @@ Layout styling End
 
     .wrapper-logo {
       padding-left: 10px;
-      margin-top: 19px;
+      margin-top: 16px;
+    }
+
+    nav ul {
+      padding-right: 32px;
+    }
+
+    nav ul li a {
+      font-size: 20px;
     }
 
     #expert .wrapper-logo {
@@ -895,6 +974,14 @@ Layout styling End
 
     #worldup .wrapper-logo {
       padding-left: 0;
+    }
+
+    #expert h1 {
+      margin-top: 50px;
+    }
+
+    #worldup h1 {
+      margin-top: 50px;
     }
 
     #hero {
@@ -907,11 +994,11 @@ Layout styling End
     }
 
     #hero p {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     #work {
-      margin: 70px 0;
+      margin: 60px 0;
     }
 
     #work .row {
@@ -929,6 +1016,10 @@ Layout styling End
       width: 50%;
       float: left;
       display: block;
+    }
+
+    #index .col-lg-6 {
+      padding-right: 40px;
     }
 
     #solution .col-lg-6 {
@@ -1056,10 +1147,28 @@ Layout styling End
       padding-left: 15px;
     }
 
+    .project-title {
+      font-size: 24px;
+    }
+
+    .project-type {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .project-description {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    footer p {
+      font-size: 20px;
+    }
+
     /* extra large devices (1200px and larger) */
     @media only screen and (min-width: 1200px) {
       #index .wrapper-logo {
-        padding-left: 50px;
+        padding-left: 5px;
       }
 
       #expert .wrapper-logo {
