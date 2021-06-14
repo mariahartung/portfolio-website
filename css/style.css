@@ -787,6 +787,22 @@ Layout styling End
     max-width: 580px;
   }
 
+  #work img {
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  #work img:hover {
+    color: #f0f0f0;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+  }
+
+  #work img:focus {
+    color: #f0f0f0;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 9px 18px;
+  }
+
   .menu {
     max-width: 300px;
     margin: 0 auto;
