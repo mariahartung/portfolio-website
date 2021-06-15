@@ -186,31 +186,6 @@ a:active {
   background-color: #ffdb5a;
 }
 
-.button-cv {
-  display: inline-block;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: #2f2f2f;
-  background-color: #ffdb5a;
-  padding: 15px 30px;
-  border: 1px solid #ffdb5a;
-  border-radius: 40px;
-  transition-property: box-shadow;
-  transition-duration: 0.3s;
-  transition-timing-function: linear;
-}
-
-.button-cv:hover,
-.button-cv:focus {
-  color: #2f2f2f;
-  background-color: #ffd027;
-  box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.3);
-}
-
-.button-cv:active {
-  color: #2f2f2f;
-}
-
 img {
   width: 100%;
 }
@@ -227,15 +202,16 @@ Layout styling
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 76px;
 }
 
 .logo {
-  max-width: 40px;
+  max-width: 35px;
   padding-top: 16px;
 }
 
 .wrapper-logo {
+  margin-top: 1px;
   display: inline-block;
 }
 
@@ -284,7 +260,7 @@ nav ul li a:active {
   position: absolute;
   right: 0;
   top: 14px;
-  font-size: 32px;
+  font-size: 29px;
   padding-right: 15px;
   color: #fff;
   background-color: inherit;
@@ -300,13 +276,13 @@ nav ul li a:active {
 }
 
 .navtoggleresponsive nav {
-  padding: 20px 0;
+  padding: 16px 0;
 }
 
 .navtoggleresponsive li {
   display: block;
   padding: 8px 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navtoggleresponsive li:last-child {
@@ -322,7 +298,7 @@ nav ul li a:active {
   display: block;
   right: 0;
   top: 20px;
-  font-size: 40px;
+  font-size: 35px;
   padding-right: 30px;
   color: #fff;
   background-color: inherit;
@@ -688,26 +664,30 @@ Layout styling End
 
   #expert header .container {
     display: block;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   #worldup header .container {
     display: block;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .logo {
+    max-width: 35px;
     padding-top: 0;
   }
 
   .wrapper-logo {
     text-align: center;
     padding-top: 0;
-    padding-left: 5px;
-    margin-top: 16px;
+    margin-top: 18px;
     float: left;
+  }
+
+  #index .wrapper-logo {
+    padding-left: 5px;
   }
 
   nav {
@@ -833,7 +813,7 @@ Layout styling End
 
   #expert .container {
     display: block;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -856,9 +836,17 @@ Layout styling End
 
   #worldup .container {
     display: block;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+  }
+
+  #worldup nav ul {
+    padding-right: 0;
+  }
+
+  #expert nav ul {
+    padding-right: 0;
   }
 
   .design-thinking {
@@ -968,6 +956,7 @@ Layout styling End
     }
 
     .logo {
+      max-width: 40px;
       padding-top: 2px;
     }
 
@@ -976,8 +965,8 @@ Layout styling End
       margin-top: 16px;
     }
 
-    nav ul {
-      padding-right: 32px;
+    #index nav ul {
+      padding-right: 30px;
     }
 
     nav ul li a {
@@ -1091,11 +1080,21 @@ Layout styling End
     }
 
     #expert .container {
+      max-width: 1100px;
       padding: 0 60px;
     }
 
     #worldup .container {
+      max-width: 1100px;
       padding: 0 60px;
+    }
+
+    #expert header .container {
+      max-width: 1130px;
+    }
+
+    #worldup header .container {
+      max-width: 1105px;
     }
 
     .center.resume-button {
@@ -1105,13 +1104,13 @@ Layout styling End
     }
 
     .image {
-      max-width: 1170px;
+      max-width: 1100px;
       padding: 30px 60px;
       margin: 0 auto;
     }
 
     .image-system {
-      max-width: 1170px;
+      max-width: 1100px;
       padding: 0 10px;
       margin: 0 auto;
     }
@@ -1183,6 +1182,10 @@ Layout styling End
 
     /* extra large devices (1200px and larger) */
     @media only screen and (min-width: 1200px) {
+      #index nav ul {
+        padding-right: 30px;
+      }
+
       #index .wrapper-logo {
         padding-left: 5px;
       }
