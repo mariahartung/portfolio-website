@@ -402,10 +402,6 @@ footer .fas {
   text-align: center;
 }
 
-.center.resume-button {
-  margin-top: 30px;
-}
-
 #contact .center {
   padding: 20px 0;
 }
@@ -596,7 +592,7 @@ Layout styling End
 .project-title {
   font-size: 22px;
   margin: 0;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
 .project-type {
@@ -613,6 +609,10 @@ Layout styling End
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 30px;
+}
+
+.row-project {
+  margin: 30px 0;
 }
 
 /* medium devices (640px and larger) */
@@ -900,6 +900,15 @@ Layout styling End
     display: table;
   }
 
+  .row-project {
+    margin: 20px 0;
+  }
+
+  .project-info {
+    padding-inline-start: 20px;
+    margin-top: 5px;
+  }
+
   .project-title {
     font-size: 22px;
   }
@@ -1048,15 +1057,6 @@ Layout styling End
       display: table;
     }
 
-    .col1 {
-      padding-right: 30px;
-    }
-
-    .col2 {
-      padding-left: 40px;
-      padding-right: 0;
-    }
-
     #about .col-lg-6 {
       padding-bottom: 15px;
       width: 100%;
@@ -1101,10 +1101,19 @@ Layout styling End
       max-width: 1105px;
     }
 
-    .center.resume-button {
-      text-align: left;
-      padding-top: 10px;
-      padding-bottom: 30px;
+    .col-lg-2 {
+      float: left;
+      padding-right: 28px;
+    }
+
+    .col-lg-2::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .row-project {
+      margin: 50px 0;
     }
 
     .image {
@@ -1196,6 +1205,11 @@ Layout styling End
 
       #expert .wrapper-logo {
         padding-left: 10px;
+      }
+
+      .col-lg-2 {
+        float: left;
+        padding-right: 40px;
       }
     }
   }
