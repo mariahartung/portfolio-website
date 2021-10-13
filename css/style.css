@@ -677,7 +677,7 @@ Layout styling End
   .wrapper-logo {
     text-align: center;
     padding-top: 0;
-    margin-top: 18px;
+    margin-top: 16px;
     float: left;
   }
 
@@ -971,11 +971,15 @@ Layout styling End
     }
 
     .wrapper-logo {
-      padding-left: 10px;
+      padding-left: 5px;
       margin-top: 16px;
     }
 
     #index nav ul {
+      padding-right: 30px;
+    }
+
+    #about nav ul {
       padding-right: 30px;
     }
 
