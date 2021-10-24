@@ -465,7 +465,7 @@ footer .fas {
 .image {
   margin: 0 auto;
   max-width: 100%;
-  padding: 15px;
+  padding: 10px 0 10px 0;
 }
 
 .image-users {
@@ -571,11 +571,11 @@ Layout styling End
 .image-sitemap {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 30px 15px;
+  padding: 30px 0 15px 0;
 }
 
 .image-wireframes {
-  padding: 10px 0;
+  padding: 0;
 }
 
 .gif {
@@ -679,10 +679,6 @@ Layout styling End
     padding-top: 0;
     margin-top: 16px;
     float: left;
-  }
-
-  #index .wrapper-logo {
-    padding-left: 5px;
   }
 
   nav {
@@ -816,7 +812,7 @@ Layout styling End
     display: block;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 15px;
   }
 
   #expert h1 {
@@ -839,15 +835,15 @@ Layout styling End
     display: block;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  #worldup nav ul {
-    padding-right: 0;
+    padding: 0 15px;
   }
 
   #expert nav ul {
-    padding-right: 0;
+    padding-right: 15px;
+  }
+
+  #worldup nav ul {
+    padding-right: 15px;
   }
 
   .design-thinking {
@@ -856,11 +852,17 @@ Layout styling End
   }
 
   .image {
-    padding: 15px 30px;
+    padding: 15px 0 30px 0;
+  }
+
+  .image-system {
+    max-width: 1200px;
   }
 
   .image-wireframes {
-    padding: 20px 0;
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
   }
 
   #solution .col-md-6 {
@@ -971,8 +973,7 @@ Layout styling End
     }
 
     .wrapper-logo {
-      padding-left: 5px;
-      margin-top: 16px;
+      padding-left: 0;
     }
 
     #index nav ul {
@@ -985,14 +986,6 @@ Layout styling End
 
     nav ul li a {
       font-size: 20px;
-    }
-
-    #expert .wrapper-logo {
-      padding-left: 0;
-    }
-
-    #worldup .wrapper-logo {
-      padding-left: 0;
     }
 
     #expert h1 {
@@ -1088,26 +1081,37 @@ Layout styling End
     }
 
     #expert .container {
-      max-width: 1100px;
-      padding: 0 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    #expert nav ul {
+      padding-right: 30px;
+    }
+
+    #worldup nav ul {
+      padding-right: 30px;
     }
 
     #worldup .container {
-      max-width: 1100px;
-      padding: 0 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
     }
 
     #expert header .container {
-      max-width: 1130px;
+      max-width: 1200px;
+      display: block;
     }
 
     #worldup header .container {
-      max-width: 1105px;
+      max-width: 1200px;
     }
 
     .col-lg-2 {
       float: left;
-      padding-right: 28px;
+      padding-right: 40px;
     }
 
     .col-lg-2::after {
@@ -1121,21 +1125,20 @@ Layout styling End
     }
 
     .image {
-      max-width: 1100px;
-      padding: 30px 60px;
+      max-width: 100%;
+      padding: 30px 0 30px 0;
       margin: 0 auto;
     }
 
     .image-system {
-      max-width: 1100px;
-      padding: 0 10px;
+      max-width: 1280px;
       margin: 0 auto;
     }
 
     .image-sitemap {
-      max-width: 1000px;
+      max-width: 1500px;
       margin: 0 auto;
-      padding: 30px 60px;
+      padding: 30px 0 30px 0;
     }
 
     .image-worldup {
@@ -1143,7 +1146,9 @@ Layout styling End
     }
 
     .image-wireframes {
-      padding: 40px 0;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 10px 0 10px 0;
     }
 
     .divider {
@@ -1203,21 +1208,13 @@ Layout styling End
         padding-right: 30px;
       }
 
-      #index .wrapper-logo {
-        padding-left: 5px;
-      }
-
       #hero {
         padding-bottom: 100px;
       }
 
-      #expert .wrapper-logo {
-        padding-left: 10px;
-      }
-
       .col-lg-2 {
         float: left;
-        padding-right: 40px;
+        padding-right: 80px;
       }
     }
   }
