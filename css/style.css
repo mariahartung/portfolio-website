@@ -273,7 +273,6 @@ nav ul li a:active {
 .navtoggle,
 .navtoogleresponsive {
   position: relative;
-  background: linear-gradient(195.78deg, #2F2F2F -394.94%, #2D3E50 -101.01%, #0E6BA8 546.43%);
 }
 
 .navtoggleresponsive nav {
