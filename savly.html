@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/e32f73a6fe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Savly">
+  <meta property="og:description" content="Web app built to minimize food waste by heling professionals to keep track of food, cook with available ingredients, and buy missing ones through the app.">
+  <meta property="og:image" content="img/savly/thumbnail_linkedin_savly.jpg">
+  <meta property="og:url" content="https://mariahartung.com/expert.html">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Expert</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#2d3e50">
+  <meta name="msapplication-TileColor" content="#2d3e50">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body id="expert">
+  <nav id="dot-nav"></nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="wrapper-logo">
+          <a href="index.html"><img src="img/Logo_v2.svg" class="logo" alt="Maria Hartung Logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><span class="underline-work">Work</span></a></li>
+            <li><a href="about.html"><span class="underline-about">About</span></a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i><i class="fas fa-times"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <div>
+      <section class="in-viewport section-0">
+        <!-- Hero Section -->
+        <div id="hero">
+          <div class="container-hero">
+            <picture>
+              <source srcset="img/savly/m_hero.jpg" media="(max-width:767px)">
+              <img src="img/savly/d_hero.jpg" alt="hero savly image">
+            </picture>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h1>Savly</h1>
+            <div class="row">
+              <h3>Project Summary</h3>
+              <p>
+                Searching for recipes only to find several ingredients missing for cooking a meal can be a frustrating experience. Buying specific ingredients for recipes requires planning. This takes time, professionals often don’t have. The cooking
+                process is also slowed down due to inconsistent guides and a lack of options to convert units to a different metric system.
+                In addition to that, an overwhelming amount of choices online prevent users from making fast decisions about which recipe to cook. Busy lifestyles of professionals also make it hard to keep track of food expiry
+                dates which lead to food waste. To solve this problem, I created the responsive web app Savly. It is an all-in-one solution for keeping track of food, cooking with available ingredients, and buying missing ones through an integrated
+                shop.
+              </p>
+              <h4>Constraints</h4>
+              <p>
+                The web app should be free to use but requires payment for purchasing ingredients over the platform to generate revenue for the business. It should also be built with mobile-first approach and take advantage of the devices'
+                capabilities.
+                The project duration was set for 2 months.
+              </p>
+              <div class="row-project">
+                <div class="col-lg-2">
+                  <b>Project Type</b>
+                  <ul class="project-info">
+                    <li>Concept
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-lg-2">
+                  <b>Timeline</b>
+                  <ul class="project-info">
+                    <li>Jan 2022 - <br> Mar 2022
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <b>Role</b>
+                  <ul class="project-info">
+                    <li>UX/UI Designer
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <b>Responsible for</b>
+                  <ul class="project-info">
+                    <li>Competitive Analysis
+                    </li>
+                    <li>User Research
+                    </li>
+                    <li>Information Architecture
+                    </li>
+                    <li>Wireframing & Prototyping
+                    </li>
+                    <li>Usability Testing
+                    </li>
+                    <li>UI Design
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <b>Tools</b>
+                  <ul class="project-info">
+                    <li>Figma
+                    </li>
+                    <li>Sketch
+                    </li>
+                    <li>Axure
+                    </li>
+                    <li>Balsamiq
+                    </li>
+                    <li>Notion
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-1">
+        <div class="divider">
+          <div>
+            <h2>The Challenge</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                When searching for a recipe to prepare a meal, ingredients are not always available. Buying specific ingredients for recipes requires planning. This takes time, professionals often don’t have.
+                Browsing through a sea of options makes it hard to make quick decisions about which recipe to cook. Once started, the cooking process is oftentimes slowed down because of jargon, inaccurate instructions, and converting units from a
+                different metric system by hand.
+                Tight schedules and busy lifestyles of professionals also make it hard to keep track of food expiry dates, leading to food waste. There had to be a better way to streamline the home cooking experience and reduce food waste at the same
+                time. After initial discovery research and validating assumptions with users, I was able to come up with a problem statement:
+              </p>
+              <h4>Problem Statement</h4>
+              <p>
+                Busy professionals need a way to cook quick meals with available ingredients because they want to use up food they already have but are overwhelmed by the amount of choices for recipes online and forget to keep track of expiring food,
+                leading to food being wasted.
+                We will know this to be true when we see how many users use our app to cook recipes with available ingredients they add to the app.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="divider">
+          <div>
+            <h2>Process</h2>
+          </div>
+        </div>
+        <!-- Divider End-->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Design Thinking
+            </h3>
+            <p>
+              To solve the problem, I applied the design thinking methodology during the project. It was used to understand the user, define the problem, and create a user-centered solution in six phases.
+            </p>
+          </div>
+          <div class="design-thinking">
+            <picture>
+              <source srcset="img/expert/designthinking_mobile.png" media="(max-width:767px)">
+              <img src="img/expert/designthinking_desktop.png" alt="Design thinking process image">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-2">
+        <div class="divider">
+          <div>
+            <h2>Understand</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Analyzing the Competition
+            </h3>
+            <p>
+              I started off by reviewing 6 existing apps to better understand the problem space to find opportunities for Savly to stand out in the market.
+              For a better overview, I chose 7 categories for the analysis: strengths, weaknesses, content, design, UX, compatibility, and opportunities.
+              I also looked at customer app reviews and ran a feature audit to learn more about what users generally expect to see in existing apps to find gaps in their offerings.
+              As a result, I discovered several opportunity features for Savly to differentiate itself from the competition.
+            </p>
+            <div class="image">
+              <picture>
+                <source srcset="img/savly/m_features.jpg" media="(max-width:767px)">
+                <img src="img/savly/d_features.jpg" alt="Feature Audit">
+              </picture>
+            </div>
+            <div class="wrapper">
+              <h3>Opportunities for Savly</h3>
+              <ul>
+                <li> Recommended recipes based on user’s diet and expiring food items</li>
+                <li> Video tutorials</li>
+                <li> Customize the number of servings</li>
+                <li> Select food restrictions in onboarding</li>
+                <li> Shop ingredients in the app</li>
+              </ul>
+            </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-3">
+        <div class="divider">
+          <div>
+            <h2>Observe</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Survey</h3>
+            <p>
+              Next, I carried out user research to understand the user. I started by running a survey with 172 participants to understand the make-up of my target audience, learn more about the context of use, and get some broad insights into cooking
+              behavior and food waste habits.
+              The survey was distributed on Slack and Reddit for a wider reach and stayed active for 3 days.
+            </p>
+            <div class="survey">
+              <picture>
+                <source srcset="img/savly/m_survey_employment status.png" media="(max-width:767px)">
+                <img src="img/savly/d_survey_employment status.png" alt="Survey Results">
+              </picture>
+            </div>
+            <div class="survey">
+              <picture>
+                <source srcset="img/savly/m_survey_frequency_recipes.png" media="(max-width:767px)">
+                <img src="img/savly/d_survey_frequency_recipes.png" alt="Survey Results">
+              </picture>
+            </div>
+            <div class="survey">
+              <picture>
+                <source srcset="img/savly/m_survey_tools.png" media="(max-width:767px)">
+                <img src="img/savly/d_survey_tools.png" alt="Survey Results">
+              </picture>
+            </div>
+            <div class="survey">
+              <picture>
+                <source srcset="img/savly/m_survey_buy_groceries.png" media="(max-width:767px)">
+                <img src="img/savly/d_survey_buy_groceries.png" alt="Survey Results">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h4>Survey Results</h4>
+            <p>
+              Survey findings revealed that our main target audience are 25-34 year-old professionals who live in 1-2 person households and mainly follow recipes on their mobile phones.
+              A majority of them have no dietary restrictions. 14.5% are vegetarian and 9.4% vegan. Over 70 % use recipes to prepare their meals; however, frequency of use varies among users.
+              The main source for finding recipes are websites and cooking blogs, mostly accessed through a google search. Although they use their phones to read recipe directions, mobile apps are rarely used for recipe discovery.
+            </p>
+            <p>A surprising majority (72.7%) of users does not buy groceries online. This raises the question of why that is and has to be investigated further as it’s conflicting with business goals for the app.
+              To organize their shopping, 64% like to use shopping lists, 54.7% of users buy on impulse.
+            </p>
+            <p>When it comes to food waste, 70.9% of users tend to throw out small amounts of unused food per week. The main cause for this is loosing track of food expiry dates (63.4%).
+            </p>
+            <h5>Conclusions - Definition of the target audience & product requirements
+            </h5>
+            <p>The numbers of survey responses yielded representative and rich insights. They helped me narrow down the target audience to professionals to target them for user interviews next.
+              Insights also led to defining product requirements to build a responsive web app with a mobile-first approach that would be accessible through the browser, as this is the main way users like to discover recipes and follow recipe
+              directions.
+            </p>
+          </div>
+          <div class="wrapper">
+            <h3>User Interviews</h3>
+            <p> As a result of survey findings, I narrowed down the primary user group to professionals to target them for 7 interviews for a better understanding of their needs and goals.
+              Recruitment of users was challenging and took longer than expected. First attempts to recruit survey users by following up via email were unsuccessful, so I changed my approach to recruiting suitable participants via Slack to stay on
+              track with the timeline.
+            <h4>Research Goals</h4>
+            <ul>
+              <li> Document user pain points and needs to understand what features users find most and least valuable in current products they use. </li>
+              <li> Learn more about task flows, common obstacles, and workarounds for cooking recipes with apps or websites.</li>
+              <li> Understand how users keep track of food and reasons for food waste.</li>
+              <li> Find possible use cases for online grocery shopping and understand reasons why users are reluctant to buy groceries online.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h3>Affinity Mapping</h3>
+            <p>
+              After the transcription of interviews, I used affinity mapping to make sense of my data and find common patterns in users' responses.
+              With this technique similar responses are grouped into clusters. These were later used to generate insights.
+            </p>
+            <div class="full-width">
+              <picture>
+                <source srcset="img/savly/m_affinity mapping_frustrations.png" media="(max-width:767px)">
+                <img src="img/savly/d_affinity mapping_frustrations.png" alt="Cluster frustrations">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <div>
+              <h3>Key Findings</h3>
+            </div>
+            <h5>1. Drop off recipes because of unavailable ingredients
+            </h5>
+            <p>If users don’t have the ingredients for a meal, they close the recipe and move on to the next one. Once started the cooking process and faced with missing ingredients, they substitute them with available ones rather than stopping to
+              cook.
+            </p>
+            <h5>2. Overwhelmed by choices online
+            </h5>
+            <p>When browsing recipes users are often overwhelmed by too many choices online. This makes it hard to make a decision about which recipe to cook. No overview of recipes for a specific diet and forgetting to save recipes for later access
+              also makes it difficult to find recipes (again).
+            </p>
+            <h5>3. Frustrated to convert units manually
+            </h5>
+            <p>Servings and units in different metric systems are sometimes not in line with user needs. When there is no option to adjust or convert units in their corresponding system, users do it by hand or go to other websites to convert them
+              there. Technical issues also affect the user experience when conversion doesn’t work properly on mobile or desktop.
+            </p>
+            <h5>4. Forgetting to keep track of food expiry dates
+            </h5>
+            <p>The number one reason for user food waste is forgetting about food gone bad due to busy lifestyle and schedules. Having no overview about available food and expiry dates also leads to disorientation. Lack of recipe inspirations of how
+              to use up food is another reason for throwing out food. Buying food in large package sized is also not efficient for our users living in 1-2 person households. They can’t get through the food fast enough, before it gets bad.
+            </p>
+            <h5>5. Desire to choose food themselves when grocery shopping
+            </h5>
+            <p>Users like being able to estimate the quality of food for themselves so they can make faster decisions in store than browsing websites for groceries online. Due to bad experiences with delivery services, users don’t trust others to
+              pick fresh food for them. However, some users have had good experiences with buying packaged and non-perishable food and would consider buying certain ingredients they can’t find locally, online.
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-4">
+        <div class="divider">
+          <div>
+            <h2>POV</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Empathizing with the User</h3>
+            <p>
+              Next, I used my research findings to create personas to empathize with user’s needs, goals, and frustrations.
+              As a reference throughout the project, they helped me to stay on track and make design decisions with end-users in mind.
+            </p>
+            <div class="image">
+              <picture>
+                <source srcset="img/savly/m_ben_persona.jpg" media="(max-width:767px)">
+                <img src="img/savly/d_ben_persona.jpg" alt="Persona Ben">
+              </picture>
+            </div>
+            <div class="image">
+              <picture>
+                <source srcset="img/savly/m_nina_persona.jpg" media="(max-width:767px)">
+                <img src="img/savly/d_nina_persona.jpg" alt="Persona Ben">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-5">
+        <div class="divider">
+          <div>
+            <h2>Ideate</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>HMW's & Prioritization of Features</h3>
+            <p>
+              To start the ideation phase, I brainstormed HMW statements and prioritized features using the impact-effort matrix to narrow down the scope for the MVP.
+            </p>
+            <div class="image">
+              <picture>
+                <source srcset="img/savly/m_prioritization.jpg" media="(max-width:767px)">
+                <img src="img/savly/d_prioritization.jpg" alt="Prioritization Matrix">
+              </picture>
+            </div>
+            <h3>Mapping Out the Journey</h3>
+            <p>
+              After the prioritization of features, I created user journey maps to visualize the process Ben and Nina need to go through to accomplish their goals in Savly.
+            </p>
+            <p><b>Nina's Journey:</b> Nina found some grated cheese in the fridge that will expire soon. She wants to use it to cook a meal but has no idea what to make of it. She will use Savly to find a recipe for grated cheese to prepare a dinner
+              for two.
+            </p>
+            <p><b>Ben's Journey:</b> Ben wants to make a fancy bowl of ramen but doesn’t have the rice wine mirin. He looked for it online, but it was reasonably priced. He will use Savly to buy mirin through the app and have it delivered in order to
+              prepare ramen later.
+            </p>
+            <div class="image">
+              <picture>
+                <source srcset="img/savly/m_nina_journeymap.png" media="(max-width:767px)">
+                <img src="img/savly/d_nina_journeymap.png" alt="User Journey Map Nina">
+              </picture>
+              <div class="image">
+                <picture>
+                  <source srcset="img/savly/m_ben_journeymap.png" media="(max-width:767px)">
+                  <img src="img/savly/d_ben_journeymap.png" alt="User Journey Map Ben">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h4>Based on the journey maps, key features were narrowed down further:</h4>
+            <ul>
+              <li>Sign Up & Onboarding</li>
+              <li>Search for recipe for available ingredient</li>
+              <li>Adjust recipe servings and units</li>
+              <li>Follow directions and save the recipe to favorites</li>
+              <li>Add missing ingredient to the cart</li>
+              <li>Buy missing ingredient through the app</li>
+            </ul>
+            <h3>User Flows</h3>
+            <p>
+              Using the journey maps and personas as a guide,
+              I created user flows to understand the specific tasks Ben and Nina would need to do and the pages needed to complete them in the app.
+            </p>
+            <h4>User flow for cooking a recipe</h4>
+            <div class="image-system">
+              <picture>
+                <source srcset="img/savly/m_userflow.png" media="(max-width:767px)">
+                <img src="img/savly/d_userflow.png" alt="User Flow Adjust Recipe">
+              </picture>
+            </div>
+            <h3>Information Architecture</h3>
+            <p>
+              With the user flows and journey maps in hand, I built the first version of a sitemap.
+            </p>
+            <div class="image-system">
+              <picture>
+                <source srcset="img/savly/m_sitemap.png" media="(max-width:767px)">
+                <img src="img/savly/d_sitemap.png" alt="Sitemap Before Cardsort">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-6">
+        <div class="divider">
+          <div>
+            <h2>Prototype</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Sketching out possible solutions</h3>
+            <p>
+              Using the sitemap, user flows, and personas, I started creating low-to mid- fidelity wireframes for key features by rapidly prototyping different solutions.
+              I started by creating rough sketches on paper but then took them to Balsamiq pretty quickly, as it helped me save more time. Afterwards, I created mid-fidelity wireframes and a prototype in Figma,
+              to test my design in the next phase with real users.
+            </p>
+            <h5>Low-Fidelity Wireframes</h5>
+            <div class="image">
+              <picture>
+                <source srcset="img/savly/m_lowfi_wireframes.jpg" media="(max-width:767px)">
+                <img src="img/savly/d_lowfi_wireframes.jpg" alt="Low-Fidelity Wireframes">
+              </picture>
+            </div>
+            <h5>Recipes, Tutorial & Search Results</h5>
+            <div class="image">
+              <picture>
+                <source srcset="img/savly/m_recipes.png" media="(max-width:767px)">
+                <img src="img/savly/d_recipes.png" alt="Mid-Fidelity Wireframes">
+              </picture>
+            </div>
+            <h5>Checkout</h5>
+            <div class="image">
+              <picture>
+                <source srcset="img/savly/m_checkout.png" media="(max-width:767px)">
+                <img src="img/savly/d_checkout.png" alt="Mid-Fidelity Wireframes">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-7">
+        <div class="divider">
+          <div>
+            <h2>Test
+            </h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Usability Testing</h3>
+            <p>
+              To validate my solution, I conducted moderated remote usability tests with 5 participants via Google Meet.
+              The goal was to assess learnability and errors for first-time users.
+            </p>
+            <ul>
+              <li> Do users understand the web app and its value?</li>
+              <li> Can users successfully complete basic tasks such as finding a recipe or buying ingredients through the app? </li>
+              <li> What errors do occur frequently and how severe are they?</li>
+            </ul>
+            <p>
+              After the tests, I used affinity mapping and the rainbow spreadsheet to organize my findings and prioritize issues to be fixed. Errors were measured by using Jakob Nielsen’s rating scale. I also measured satisfaction with Net Promoter
+              Score at the end of the test by asking users for their ratings on how likely they would recommend the app to a friend or colleague.
+            </p>
+          </div>
+          <div class="wrapper">
+            <h4>Test Results</h4>
+            <div class="image-numbers">
+              <picture>
+                <source srcset="img/savly/m_numbers.png" media="(max-width:767px)">
+                <img src="img/savly/d_numbers.png" alt="Numbers">
+              </picture>
+            </div>
+            <p>
+              The overall feedback was mostly positive, but test results also brought some critical issues to light.
+              All participants found the app simple, straightforward and easy to use. Most of them could complete tasks quickly without any issues.
+              The major cause of confusion was task 2 (search for recipe for available ingredients), the lengthy onboarding process, and data entry during checkout.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <h5>Issue 1: Couldn’t find recipe for available ingredient (Severity: 4)</h5>
+          <p>
+            2/5 participants couldn’t find a recipe for grated cheese and were stuck on the task. Users assumed they would need to add the item to the fridge first to find a recipe for it. They also browsed categories on the recipe page to find the
+            recipe there instead of using the search bar, which was also overlooked by one participant.
+          </p>
+          <p>As a result, I enabled the option to add items to the fridge through the plus button and added copy and a button for users to find recipes for their ingredients from the fridge.
+          </p>
+          <h5>Issue 2: Onboarding is too long (Severity: 3)</h5>
+          <p>
+            2/5 users found the onboarding process too long and said they would drop out. They also didn’t know why they should add ingredients to the fridge as it was too early for them. The concept of the fridge and how it works was also not clear
+            from the homepage.
+          </p>
+          <p>To solve this, I removed the feature to add ingredients from onboarding to shorten the process and postponed it to a later stage. As soon as users complete the onboarding, they arrive at the fridge page where they can add their
+            ingredients to find recipes for them.
+            To make the concept of the fridge more clear, I also added pictures of recently added items to the fridge section on the homepage.
+          </p>
+        </div>
+        <div class="container">
+          <h5>Solution for Issue 1 & 2</h5>
+          <div class="image">
+            <picture>
+              <source srcset="img/savly/m_issue_2.png" media="(max-width:767px)">
+              <img src="img/savly/d_issue_2.png" alt="Issue 1 & 2">
+            </picture>
+          </div>
+          <div>
+            <h5>Issue 3: Entering personal data during checkout (Severity: 3)</h5>
+            <p>
+              2/5 users were annoyed and confused to enter their personal data during the checkout process when paying via PayPal.
+              They either thought their data and address could be saved and prefilled, or wanted to checkout with PayPal on the cart page to shorten the process.
+              Users also reported that some critical information was missing during checkout such as delivery costs, quantity selection for food items, and price displayed at each step.
+            </p>
+            <p>To address this, I added the Paypal button and delivery time selection to the cart to shorten the checkout process from 5 steps to 2 steps.
+              Missing information about delivery costs and quantity selection has also been added to the checkout process for more transparency.
+            </p>
+          </div>
+          <h5>Solution for Issue 3</h5>
+          <div class="image">
+            <picture>
+              <source srcset="img/savly/m_issue_1.png" media="(max-width:767px)">
+              <img src="img/savly/d_issue_1.png" alt="Issue 3">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-8">
+        <div class="divider">
+          <div>
+            <h2>Visual Design</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Color Choice & Typography</h3>
+            <p>
+              After having fixed flaws in the prototype through usability testing feedback, it was time to bring Savly to life with visuals. As Savly is content-heavy, I wanted to keep the design minimal and modern to let the images shine.
+              I chose green as an accent color to emphasize the freshness of products and dishes. As a number of people mentioned in the survey that they still use books and handwritten recipe cards, I decided to choose Libre Baskerville as a
+              typeface to resemble the experience of browsing old recipe books. To combine it, I used Libre Franklin to add a modern touch.
+            </p>
+          </div>
+        </div>
+        <div class="image-system">
+          <picture>
+            <source srcset="img/savly/m_colors.png" media="(max-width:767px)">
+            <img src="img/savly/d_colors.png" alt="Colors">
+          </picture>
+        </div>
+        <div class="image-system">
+          <picture>
+            <source srcset="img/savly/m_typography.png" media="(max-width:767px)">
+            <img src="img/savly/d_typography.png" alt="Typography">
+          </picture>
+        </div>
+        <!-- Divider -->
+        <div class="divider">
+          <div>
+            <h2>Mockups</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div>
+          <div class="full-width">
+            <picture>
+              <source srcset="img/savly/m_mockups.png" media="(max-width:767px)">
+              <img src="img/savly/d_mockups.png" alt="Mockups">
+            </picture>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="divider">
+          <div>
+            <h2>View Prototype</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <p>
+              After having implemented user testing feedback and the visual design, I finalized the prototype using Figma.
+              Feel free to interact with the prototype to see how it works.
+            </p>
+            <div class="prototype">
+              <a href="https://www.figma.com/proto/vB34F2xYX8cOr8zCKbVI8c/Savly-App?page-id=301%3A344&node-id=301%3A347&viewport=257%2C48%2C0.09&scaling=scale-down&starting-point-node-id=301%3A347" class="button-prototype" target="_blank">View
+                Prototype</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-9">
+        <div class="divider">
+          <div>
+            <h2>Final Solution</h2>
+          </div>
+        </div>
+        <div id="solution">
+          <div class="container">
+            <div class="wrapper">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <h4>Keep track of food and expiry dates</h4>
+                  <p>
+                    Users have the option to add available ingredients to the fridge to provide them with a better overview of available food they have at home.
+                    They can either add ingredients manually or scan a barcode with the option to edit expiry dates and quantities of food items.
+                    To help Ben and Nina use up available food, they are notified about expiring items and get recipe recommendations based on available ingredients and their dietary preferences.
+                  </p>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="gif">
+                    <img src="img/savly/add-ingredients1.gif" alt="Add ingredients Gif">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6-right col-lg-6-right">
+                  <h4>Browse and find recipes for available ingredients</h4>
+                  <p>
+                    Based on food items added to the fridge, users can browse through a recommended selection of recipes for their ingredients.
+                    To prevent overwhelming users with choices, content has been categorized and choices have been limited on the recipe page.
+                    Filters allow users to find recipes based on time, difficulty, and diet. Users also have the option to save recipes they liked to access them later.
+                    To provide Ben and Nina with an engaging experience, recipes can be followed in video format or as step-by-step tutorials in simple language.
+                    A tips section has also been added to find alternative ways of cooking for better meal outcomes.
+                  </p>
+                </div>
+                <div class="left">
+                  <div class="gif">
+                    <img src="img/savly/find-recipe1.gif" alt="Find Recipe Gif">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <h4>Adjust units and servings easily</h4>
+                  <p>
+                    Converting units and servings by hand is a tedious process. To provide a simple solution for this, adjusting proportions are now as simple as clicking a button.
+                    The ingredients list gets updated automatically and users can now prepare their meals with units in their corresponding metric system.
+                  </p>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="gif">
+                    <img src="img/savly/adjust-_-cook-recipe1.gif" alt="Adjust recipe Gif">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6-right col-lg-6-right">
+                  <h4>Buy missing ingredients for your meals</h4>
+                  <p>
+                    To save time shopping for ingredients, users have the option to buy missing ingredients through an integrated shop.
+                    Available and missing ingredients are recognized by the system based on the food inventory in the fridge. Users can either add missing items to a shopping list or buy them right away.
+                    For a frictionless checkout process, steps have been reduced. After buying the item, users can also view their recent orders and current delivery status on their dashboard.
+                  </p>
+                </div>
+                <div class="left">
+                  <div class="gif">
+                    <img src="img/savly/buy-ingredient1.gif" alt="Buy ingredient Gif">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-10">
+        <div class="divider">
+          <div>
+            <h2>Learnings</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper-learnings">
+            <p>
+              The Savly project was a great learning experience. Going through the end-to-end process from start to finish was challenging but also rewarding.
+              The process was often messy, included several iterations, and going back and forth between phases when new insights had been gained.
+              Going broad in surveys and narrowing the scope through user insights, prioritization, and user journey mapping was good because it allowed me to focus on essential features to not overload the MVP.
+              Setting myself constraints also helped me to learn how to balance user needs with business goals to arrive at a solution that could benefit both.
+              If I had more time, I would conduct a card sort for a more intuitive navigation and test the high-fidelity prototype with users to refine the design.
+              Next steps for the project also include creating a delivery flow to track updates and a feature to select multiple ingredients in the fridge to find recipes for them.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- Footer  -->
+  <footer id="contact">
+    <div>
+      <h2>Get in touch</h2>
+      <p>
+        Interested in working together? <br> Let's chat. <br>
+      </p>
+      <div class="center">
+        <a href="mailto:mariahartung@gmx.de" class="button-contact">Send Email</a>
+      </div>
+      <div class="icons">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/maria-hartung/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="impressum.html" class="impressum">Legal Notice | </a>
+        <a href="datenschutzerklärung.html" class="impressum">Privacy Policy |</a>
+        <p class="copyright">
+          © Maria Hartung 2020-2021
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="dot-nav-min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
