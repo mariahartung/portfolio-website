@@ -607,6 +607,10 @@ Layout styling End
   padding: 10px 0 10px 0;
 }
 
+.image-values {
+  padding-bottom: 40px;
+}
+
 .image-system {
   max-width: 100%;
   margin: 0px -5px 0 -5px;
@@ -1225,6 +1229,11 @@ Layout styling End
       max-width: 1480px;
       margin: 0 auto;
       padding: 10px 0;
+    }
+
+    .image-values {
+      max-width: 1200px;
+      padding-bottom: 60px;
     }
 
     .divider {
