@@ -798,11 +798,11 @@ Layout styling End
   }
 
   #index .col-md-6 {
-    padding-bottom: 24px;
+    padding-bottom: 40px;
   }
 
   #index .full-width {
-    padding-right: 20px;
+    padding-right: 25px;
   }
 
   .row::after {
@@ -1093,7 +1093,7 @@ Layout styling End
 
     #work {
       margin-top: 50px;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
     }
 
     #work .row {
@@ -1117,7 +1117,7 @@ Layout styling End
 
     #index .col-lg-6 {
       padding-right: 40px;
-      padding-bottom: 32px;
+      padding-bottom: 40px;
     }
 
     #solution .col-lg-6 {
