@@ -146,7 +146,10 @@
               <p>
                 When searching for a recipe to prepare a meal, ingredients are not always available. Browsing through a sea of recipes online is overwhelming and hinders professionals in making quick decisions when short on time.
                 Once started cooking, their process is often slowed down because of inaccurate instructions and converting units from a different metric system by hand. Due to busy schedules, they also tend to forget to keep track of
-                food expiry dates and throw out small amounts of unused food per week. There had to be a better way to streamline the home cooking experience and reduce food waste at the same time. After initial discovery research and
+                food expiry dates and throw out small amounts of unused food per week.
+              </p>
+              <p>
+                There had to be a better way to streamline the home cooking experience and reduce food waste at the same time. After initial discovery research and
                 validating assumptions with users, I was able to come up with a problem statement:
               </p>
               <h4>Problem Statement</h4>
@@ -195,9 +198,13 @@
             </h3>
             <p>
               I started off by reviewing 6 existing apps to better understand the problem space to find opportunities for Savly to stand out in the market.
-              For a better overview, I chose 7 categories for the analysis: strengths, weaknesses, content, visual design, UX, compatibility, and opportunities.
               I also looked at customer app reviews and ran a feature audit to find gaps in their offerings.
-              As a result, I discovered several opportunity features for Savly to differentiate itself from the competition.
+            </p>
+            <p>
+              As the market was already saturated with recipe apps,
+              creating an innovative product would be challenging. For this reason, I included 7 categories in the evaluation:
+              strengths, weaknesses, content, visual design, UX, compatibility, and opportunities. These would provide more insights about different aspects of the
+              interface and functionality to help differentiate Savly in the market.
             </p>
           </div>
           <div class="image">
@@ -230,9 +237,12 @@
           <div class="wrapper">
             <h3>Survey</h3>
             <p>
-              Next, I carried out user research to understand the user. I started by running a survey with 172 participants to understand the make-up of my target audience, learn more about the context of use,
-              and get some broad insights into cooking behavior and food waste habits.
+              Next, I carried out user research to understand the user. I started by running a survey with 172 participants to understand the make-up of my target audience,
+              learn more about the context of use, and get some broad insights into cooking behavior and food waste habits.
+            </p>
+            <p>
               The survey was distributed on Slack and Reddit for a wider reach and stayed active for 3 days.
+              I chose a survey first because it was a suitable method to gain general insights from a large subset of users before diving deeper into their specific needs and pain points.
             </p>
             <div class="survey">
               <picture>
@@ -334,6 +344,7 @@
           <h3>Empathizing with the User</h3>
           <p>
             Next, I used my research findings to create personas to empathize with user’s needs, goals, and frustrations.
+            To form distinct personas, I looked for similar and dissimilar patterns across users in my research findings.
             As a reference throughout the project, they helped me to stay on track and make design decisions with end-users in mind.
           </p>
         </div>
@@ -363,7 +374,8 @@
         <div class="wrapper">
           <h3>HMW's & Prioritization of Features</h3>
           <p>
-            To start the ideation phase, I brainstormed HMW statements and prioritized features using the impact-effort matrix to narrow down the scope for the MVP.
+            To translate insights into requirements, I first brainstormed as many HMW statements as possible.
+            Afterwards, I prioritized the most important ones in an impact-effort matrix to narrow down the scope for the MVP.
           </p>
         </div>
         <div class="image">
@@ -410,8 +422,9 @@
           </ul>
           <h3>User Flows</h3>
           <p>
-            Using the journey maps and personas as a guide,
-            I created user flows to understand the specific tasks Ben and Nina would need to do and the pages needed to complete them in the app.
+            Using the journey maps and personas as a guide, I created user flows to understand the specific tasks Ben and Nina
+            would need to do and the pages needed to complete them in the app. With these red routes in place, it would be easier to sketch out
+            key screens and create the information architecture later on.
           </p>
         <h5>User flow for cooking a recipe</h5>
         </div>
@@ -425,6 +438,8 @@
           <h3>Information Architecture</h3>
           <p>
             With the user flows and journey maps in hand, I built the first version of a sitemap to organize pages for the web app hierarchically.
+            The challenge here was to decide which pages would be accessible with guest browsing and which ones would require users to sign up.
+            I wanted to identify key pages that would create enough instant value for users to encourage them to explore the app further.
           </p>
         </div>
         <div class="image">
@@ -448,8 +463,11 @@
           <h3>Sketching out possible solutions</h3>
           <p>
             Using the sitemap, user flows, and personas, I started creating low-to mid- fidelity wireframes for key features by rapidly prototyping different solutions.
-            At first, I created rough sketches on paper but then took them to Balsamiq pretty quickly, as it helped me save more time. Afterwards, I created mid-fidelity wireframes and a prototype in Figma,
-            to test my design in the next phase with real users.
+            At first, I created rough sketches on paper but then took them to Balsamiq pretty quickly, as it helped me save more time.
+          </p>
+          <p>
+            I worked on several iterations to experiment with different layouts on the homepage, recipe page, and onboarding methods, as the first solution wasn't always the best.
+            Afterwards, I created mid-fidelity wireframes and a prototype in Figma to test my design in the next phase with real users.
           </p>
         <h5>Low-Fidelity Wireframes</h5>
       </div>
@@ -489,7 +507,8 @@
           <h3>Usability Testing</h3>
           <p>
             To validate my solution, I conducted moderated remote usability tests with 5 participants via Google Meet.
-            The goal was to assess learnability and errors for first-time users.
+            I chose this method because it allowed me to ask users follow-up questions when something didn't work out and gain deeper insights into their mental model.
+            The goal of the usability tests was to assess learnability and errors for first-time users.
           </p>
           <ul>
             <li> Do users understand the web app and its value?</li>
@@ -497,7 +516,7 @@
             <li> What errors do occur frequently and how severe are they?</li>
           </ul>
           <p>
-            After the tests, I used affinity mapping and a rainbow spreadsheet to organize findings and prioritize issues to be fixed. Errors were measured by using Jakob Nielsen’s rating scale. I also measured satisfaction with Net Promoter
+            Afterwards, I used affinity mapping and a rainbow spreadsheet to organize findings and prioritize issues to be fixed. Errors were measured by using Jakob Nielsen’s rating scale. I also measured satisfaction with Net Promoter
             Score at the end of the test by asking users for their ratings on how likely they would recommend the app to a friend or colleague.
           </p>
         </div>
