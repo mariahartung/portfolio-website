@@ -150,7 +150,7 @@ footer h2 {
 
 h3 {
   font-family: 'Lato', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
   color: #2f2f2f;
@@ -159,7 +159,7 @@ h3 {
 
 h4 {
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
   color: #2f2f2f;
@@ -168,7 +168,7 @@ h4 {
 
 h5 {
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.6;
   color: #2f2f2f;
@@ -391,14 +391,12 @@ nav ul li a:active {
 #hero {
   color: #fff;
   text-align: center;
-  padding-top: 0;
-  padding-bottom: 30px;
   display: inline-block;
   width: 100%;
 }
 
 #hero p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #index #hero {
@@ -439,6 +437,10 @@ footer {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+footer p {
+  font-size: 18px;
 }
 
 footer ul {
@@ -519,8 +521,8 @@ footer .fas {
 
 #about-me h2 {
   text-align: left;
-  padding: 10px 0;
-  border-bottom: 2px solid #f0f0f0;
+  margin: 25px 5px 0 0;
+  border-bottom: 4px solid #f7f8f9;
 }
 
 #about-me .skills {
@@ -549,23 +551,23 @@ footer .fas {
 }
 
 #expert #hero {
-  color: inherit;
-  background-color: #fff;
-  padding: 0;
+  margin: 0 auto;
+  background-color: #F7F8FA;
+  display: inline-block;
+}
+
+#expert img {
+  margin-bottom: -8px;
 }
 
 .container-hero {
-  color: inherit;
-  background-color: #fff;
-  padding: 0;
+  margin: 0 auto;
 }
 
-.divider {
-  color: inherit;
-  background-color: #f7f7f9;
-  text-align: center;
-  padding: 10px 0;
-  margin: 15px 0;
+.divider .container h2 {
+  text-align: left;
+  border-bottom: 4px solid #f7f8f9;
+  margin: 25px 5px 0 0;
 }
 
 .mockups {
@@ -596,7 +598,7 @@ footer .fas {
 
 #worldup #hero {
   color: inherit;
-  background-color: #fff;
+  background-color: #F7F8FA;
   padding: 0;
 }
 
@@ -605,19 +607,19 @@ footer .fas {
 }
 
 #expert h1 {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: left;
 }
 
 #worldup h1 {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: left;
 }
 
 .wrapper-learnings {
-  padding-bottom: 20px;
+  max-width: 1200px;
   margin: 0 auto;
-  max-width: 767px;
+  padding-bottom: 20px;
 }
 
 ul li {
@@ -638,7 +640,6 @@ ul li {
 
 .menu {
   max-width: 200px;
-  margin: 0 auto;
 }
 
 b {
@@ -752,6 +753,10 @@ Layout styling End
   margin: 30px 0;
 }
 
+.image-hidden {
+  display: none;
+}
+
 /* medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
   body {
@@ -759,27 +764,15 @@ Layout styling End
   }
 
   h1 {
-    font-size: 30px;
-  }
-
-  h2 {
     font-size: 28px;
   }
 
-  h3 {
-    font-size: 22px;
+  h2 {
+    font-size: 26px;
   }
 
   #index h3 {
     margin: 0;
-  }
-
-  h4 {
-    font-size: 20px;
-  }
-
-  h5 {
-    font-size: 18px;
   }
 
   header {
@@ -853,13 +846,8 @@ Layout styling End
     padding-top: 80px;
   }
 
-  #hero {
-    padding-top: 30px;
-    padding-bottom: 60px;
-  }
-
   #hero p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .col-md-6 {
@@ -924,7 +912,6 @@ Layout styling End
 
   .menu {
     max-width: 300px;
-    margin: 0 auto;
     padding: 20px 0;
   }
 
@@ -950,9 +937,9 @@ Layout styling End
     font-size: 14px;
   }
 
-  #expert .wrapper,
-  #worldup .wrapper {
-    max-width: 767px;
+  #expert .container-hero,
+  #worldup .container-hero {
+    max-width: 1500px;
     margin: 0 auto;
   }
 
@@ -962,18 +949,25 @@ Layout styling End
     margin: 0 auto;
   }
 
+  #expert .wrapper,
+  #worldup .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #expert .container p,
+  #worldup .container p {
+    max-width: 500px;
+  }
+
   #expert h1 {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: left;
   }
 
   #worldup h1 {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: left;
-  }
-
-  .divider {
-    margin: 20px 0;
   }
 
   .mockups {
@@ -1009,7 +1003,8 @@ Layout styling End
   }
 
   .survey {
-    margin: 0 -10px;
+    margin: 0 -15px;
+    max-width: 700px;
   }
 
   .image-responsive {
@@ -1020,6 +1015,10 @@ Layout styling End
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 0;
+  }
+
+  .image-portfolio {
+    max-width: 700px;
   }
 
   #solution .col-md-6 {
@@ -1086,10 +1085,6 @@ Layout styling End
     padding: unset;
   }
 
-  footer p {
-    font-size: 18px;
-  }
-
   /* large devices (1024px and larger) */
   @media only screen and (min-width: 1024px) {
     body {
@@ -1101,27 +1096,19 @@ Layout styling End
     }
 
     h1 {
-      font-size: 34px;
-    }
-
-    h2 {
-      font-size: 32px;
+      font-size: 30px;
     }
 
     #about-me .row h2 {
       text-align: left;
     }
 
-    h3 {
-      font-size: 26px;
-    }
-
     h4 {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     h5 {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .logo {
@@ -1146,18 +1133,13 @@ Layout styling End
     }
 
     #expert h1 {
-      margin-top: 50px;
+      margin-top: 30px;
       text-align: left;
     }
 
     #worldup h1 {
-      margin-top: 50px;
+      margin-top: 30px;
       text-align: left;
-    }
-
-    #hero {
-      padding-top: 50px;
-      padding-bottom: 80px;
     }
 
     #hero img {
@@ -1165,11 +1147,11 @@ Layout styling End
     }
 
     #hero p {
-      font-size: 20px;
+      font-size: 22px;
     }
 
     #index #hero {
-      height: 400px;
+      height: 360px;
     }
 
     #index #hero .container {
@@ -1252,15 +1234,14 @@ Layout styling End
       display: block;
     }
 
-    #expert .wrapper,
-    #worldup .wrapper {
-      max-width: 767px;
-      margin: 0 auto;
-    }
-
     #expert .container {
       max-width: 1200px;
       margin: 0 auto;
+    }
+
+    #expert .container p,
+    #worldup .container p {
+      max-width: 700px;
     }
 
     #expert nav ul {
@@ -1336,10 +1317,6 @@ Layout styling End
       padding-bottom: 60px;
     }
 
-    .divider {
-      margin: 40px 0;
-    }
-
     .mockups {
       margin: -50px 0;
     }
@@ -1393,6 +1370,14 @@ Layout styling End
         padding-right: 30px;
       }
 
+      h1 {
+        font-size: 36px;
+      }
+
+      #index h2 {
+        font-size: 32px;
+      }
+
       #index #hero {
         height: 450px;
       }
@@ -1401,8 +1386,8 @@ Layout styling End
         top: 30%;
       }
 
-      #hero {
-        padding-bottom: 100px;
+      #hero p {
+        font-size: 22px;
       }
 
       .col-lg-2 {

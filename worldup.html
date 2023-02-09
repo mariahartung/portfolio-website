@@ -51,8 +51,8 @@
         <div id="hero">
           <div class="container-hero">
             <picture>
-              <source srcset="img/worldup/worldup_hero_mobile.jpg" media="(max-width:767px)">
-              <img src="img/worldup/worldup_hero_desktop.jpg" alt="hero expert image">
+              <source srcset="img/worldup/m_hero_worldup.jpg" media="(max-width:767px)">
+              <img src="img/worldup/d_hero_worldup.jpg" alt="hero expert image">
             </picture>
           </div>
         </div>
@@ -84,8 +84,8 @@
                   <ul class="project-info">
                     <li>Oct 2019 - <br> Nov 2019 <br>
                     </li>
-                      <li> Updated <br> Apr 2021 <br>
-                      </li>
+                    <li> Updated <br> Apr 2021 <br>
+                    </li>
                   </ul>
                 </div>
                 <div class="col-lg-2">
@@ -131,7 +131,7 @@
       <!-- Divider -->
       <section class="section-1">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>The Challenge</h2>
           </div>
         </div>
@@ -153,7 +153,7 @@
       </section>
       <!-- Divider -->
       <div class="divider">
-        <div>
+        <div class="container">
           <h2>Process</h2>
         </div>
       </div>
@@ -175,7 +175,7 @@
       <!-- Divider -->
       <section class="section-2">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>Understand</h2>
           </div>
         </div>
@@ -211,7 +211,7 @@
       <!-- Divider -->
       <section class="section-3">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>Observe</h2>
           </div>
         </div>
@@ -256,7 +256,7 @@
       <!-- Divider -->
       <section class="section-4">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>POV</h2>
           </div>
         </div>
@@ -326,7 +326,7 @@
       <!-- Divider -->
       <section class="section-5">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>Ideate</h2>
           </div>
         </div>
@@ -347,10 +347,8 @@
               <img src="img/worldup/worldup_userflow1_desktop.png" alt="User flow take a lesson on business vocabulary">
             </picture>
           </div>
-          <div>
+          <div class="image-hidden">
             <h5>User Flow: Add a new word to category</h5>
-          </div>
-          <div class="image-worldup">
             <picture>
               <source srcset="img/worldup/worldup_userflow2_mobile.png" media="(max-width:767px)">
               <img src="img/worldup/worldup_userflow2_desktop.png" alt="User flow add a new word to category">
@@ -361,7 +359,7 @@
       <!-- Divider -->
       <section class="section-6">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>Prototype</h2>
           </div>
         </div>
@@ -375,24 +373,24 @@
               then turned them into a prototype using Prott to validate my solution in the next phase with real users.
             </p>
           </div>
-            <div class="image">
-              <picture>
-                <source srcset="img/worldup/lesson_mobile.png" media="(max-width:767px)">
-                <img src="img/worldup/lesson_desktop.png" alt="Low Fidelity Sketches">
-              </picture>
-            </div>
-            <div class="image">
-              <picture>
-                <source srcset="img/worldup/addword_mobile.png" media="(max-width:767px)">
-                <img src="img/worldup/addword_desktop.png" alt="Low Fidelity Sketches">
-              </picture>
-            </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/worldup/lesson_mobile.png" media="(max-width:767px)">
+              <img src="img/worldup/lesson_desktop.png" alt="Low Fidelity Sketches">
+            </picture>
           </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/worldup/addword_mobile.png" media="(max-width:767px)">
+              <img src="img/worldup/addword_desktop.png" alt="Low Fidelity Sketches">
+            </picture>
+          </div>
+        </div>
       </section>
       <!-- Divider -->
       <section class="section-7">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>Test</h2>
           </div>
         </div>
@@ -414,50 +412,50 @@
                 The errors and challenges experienced are listed below.
               </p>
             </div>
-          <div class="row">
+            <div class="row">
+              <div class="issue">
+                <h5>Lesson complete screen (Severity 3)</h5>
+                <p>
+                  3/4 participants found the lesson complete screen distracting to be displayed in the middle of the exercise
+                  because they wanted to move on with the exercise and not be interrupted to be asked if the lesson was complete or not.
+                </p>
+                <p>
+                  As a result, I removed the lesson complete screen and adjusted the progress bar for users to see that their exercise is ending instead.
+                  Additionally, I added an “end lesson” button at the end of each exercise and quiz block, so users could focus on completing the exercise and know when it's over.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="image-wireframes">
+            <picture>
+              <source srcset="img/worldup/issue1_mobile.png" media="(max-width:767px)">
+              <img src="img/worldup/issue1_desktop.png" alt="Issue 1">
+            </picture>
+          </div>
+          <div class="wrapper">
             <div class="issue">
-              <h5>Lesson complete screen (Severity 3)</h5>
+              <h5>Add a new word screen (Severity 4)</h5>
               <p>
-                3/4 participants found the lesson complete screen distracting to be displayed in the middle of the exercise
-                because they wanted to move on with the exercise and not be interrupted to be asked if the lesson was complete or not.
+                This issue turned out to be a usability catastrophe. All of the participants were stuck at the task and didn't know where to click to add the new word to the category.
+                The main reason for that was that the placeholder text seemed like the new word was filled in already. Categories were also hard to see from the dropdown menu.
               </p>
               <p>
-                As a result, I removed the lesson complete screen and adjusted the progress bar for users to see that their exercise is ending instead.
-                Additionally, I added an “end lesson” button at the end of each exercise and quiz block, so users could focus on completing the exercise and know when it's over.
+                To solve this, I redesigned the screen. I added placeholder text under the text lines and added icons to make text input clear.
+                I also redesigned the categories section. Instead of the dropdown menu, I included tags for existing categories to make them more visible and easier to choose from.
               </p>
             </div>
           </div>
-        </div>
-        <div class="image-wireframes">
-          <picture>
-            <source srcset="img/worldup/issue1_mobile.png" media="(max-width:767px)">
-            <img src="img/worldup/issue1_desktop.png" alt="Issue 1">
-          </picture>
-        </div>
-        <div class="wrapper">
-          <div class="issue">
-            <h5>Add a new word screen (Severity 4)</h5>
-            <p>
-              This issue turned out to be a usability catastrophe. All of the participants were stuck at the task and didn't know where to click to add the new word to the category.
-              The main reason for that was that the placeholder text seemed like the new word was filled in already. Categories were also hard to see from the dropdown menu.
-            </p>
-            <p>
-              To solve this, I redesigned the screen. I added placeholder text under the text lines and added icons to make text input clear.
-              I also redesigned the categories section. Instead of the dropdown menu, I included tags for existing categories to make them more visible and easier to choose from.
-            </p>
+          <div class="image-wireframes">
+            <picture>
+              <source srcset="img/worldup/issue2_mobile.png" media="(max-width:767px)">
+              <img src="img/worldup/issue2_desktop.png" alt="Issue 2">
+            </picture>
           </div>
         </div>
-        <div class="image-wireframes">
-          <picture>
-            <source srcset="img/worldup/issue2_mobile.png" media="(max-width:767px)">
-            <img src="img/worldup/issue2_desktop.png" alt="Issue 2">
-          </picture>
-        </div>
-      </div>
       </section>
       <!-- Divider -->
       <div class="divider">
-        <div>
+        <div class="container">
           <h2>View Prototype</h2>
         </div>
       </div>
@@ -475,7 +473,7 @@
       </div>
       <!-- Divider -->
       <div class="divider">
-        <div>
+        <div class="container">
           <h2>Learnings</h2>
         </div>
       </div>

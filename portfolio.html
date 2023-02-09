@@ -51,8 +51,8 @@
         <div id="hero">
           <div class="container-hero">
             <picture>
-              <source srcset="img/portfolio/frontend_hero_mobile.jpg" media="(max-width:767px)">
-              <img src="img/portfolio/frontend_hero_desktop.jpg" alt="hero portfolio image">
+              <source srcset="img/portfolio/m_hero_portfolio.jpg" media="(max-width:767px)">
+              <img src="img/portfolio/d_hero_portfolio.jpg" alt="hero portfolio image">
             </picture>
           </div>
         </div>
@@ -128,7 +128,7 @@
       <!-- Divider -->
       <section class="section-1">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>Design</h2>
           </div>
         </div>
@@ -151,19 +151,19 @@
               For typography, I selected the google fonts Raleway and Lato, because they are easily accessible, readable, and modern.
               To create a logo that's simple and easily recognizable, I merged the letters of my name into one.
             </p>
-          <div class="image">
-            <picture>
-              <source srcset="img/portfolio/styleguide_mobile.png" media="(max-width:767px)">
-              <img src="img/portfolio/styleguide_desktop.png" alt="Styleguide image">
-            </picture>
+            <div class="image-portfolio">
+              <picture>
+                <source srcset="img/portfolio/styleguide_mobile.png" media="(max-width:767px)">
+                <img src="img/portfolio/styleguide_desktop.png" alt="Styleguide image">
+              </picture>
+            </div>
           </div>
         </div>
-      </div>
       </section>
       <!-- Divider -->
       <section class="section-2">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>Development</h2>
           </div>
         </div>
@@ -182,90 +182,90 @@
               replaced with real images using the picture tag, so they could be displayed at optimal size on mobile and desktop.
             </p>
             <h5>Work section on the homepage structured with div elements</h5>
-          <div class="image">
-            <picture>
-              <source srcset="img/portfolio/html_structure_mobile.png" media="(max-width:767px)">
-              <img src="img/portfolio/html_structure_desktop.png" alt="HTML structure">
-            </picture>
-          </div>
-          <div class="wrapper">
-            <h3>Applying CSS Styling</h3>
-            <p>
-              With the HTML structure in place, it was time to apply some CSS styling to add a personal flair to the site.
-              CSS stands for cascading style sheet and controls how HTML is presented in the browser.
-            </p>
-            <p>
-              First, I embedded the google fonts I had decided on earlier and defined text styling, such as font-sizes, font-weight, line-height for h1-h5 headings, and body text.
-              Afterwards, I also applied colors and added link styling for different states to give my website the intended look and feel.
-            </p>
-            <h5>Link styling for different states</h5>
-            <div class="image">
+            <div class="image-portfolio">
               <picture>
-                <source srcset="img/portfolio/link_mobile.png" media="(max-width:767px)">
-                <img src="img/portfolio/link_desktop.png" alt="Link styling snippet">
+                <source srcset="img/portfolio/html_structure_mobile.png" media="(max-width:767px)">
+                <img src="img/portfolio/html_structure_desktop.png" alt="HTML structure">
               </picture>
             </div>
-            <h4>Button Styling</h4>
-            <p>
-              I also made use of transition effects on buttons to make them more accessible and interactive for users.
-              CSS transition defines the animation between a start and end state.
-              I used them to create a smooth transition for drop shadows on buttons upon hover.
-            </p>
-            <h5>Button styling with transitions</h5>
-            <div>
-              <picture>
-                <source srcset="img/portfolio/button_mobile.png" media="(max-width:767px)">
-                <img src="img/portfolio/button_desktop.png" alt="Button styling snippet">
-              </picture>
-            </div>
-            <p>
-            <h4>Adjusting the Layout with Media Queries</h4>
-            <p>To create the layout for the homepage, about and project pages, I followed the wireframes provided in the brief. I made use of a 12-column grid and
-              adjusted the layout for medium and larger screen sizes with media queries. Media queries allow for writing code that will only affect the layout up, to, or from a defined breakpoint.
-              I used them to adjust the spacing between columns for larger screen sizes and to define font-sizes for h1-h5 headings for better readability on tablet and desktop.
-            </p>
-            <h5>Styling of font-sizes with media queries</h5>
-            <div class="image">
-              <picture>
-                <source srcset="img/portfolio/media_mobile.png" media="(max-width:767px)">
-                <img src="img/portfolio/media_desktop.png" alt="media queries">
-              </picture>
-            </div>
-            <p>
-              To check the layout and styling for different viewports, I heavily relied on the "inspect" mode in google chrome to see the results of my changes and
-              do some troubleshooting when the positioning of elements was off.
-            </p>
-            <h3>Adding Interactivity with JavaScript</h3>
-            <p>
-              Next, I used Javascript to add some interactivity to my website by adding a mobile menu, that could be toggled on and off on click.
-              The menu should allow users to navigate the site more easily on mobile devices.
-              The challenge here was to keep the navigation bar for tablet and desktop and make the toggle menu only work on mobile.
-            </p>
-            <div class="menu">
-              <picture>
-                <source srcset="img/portfolio/menu_mobile.png" media="(max-width:767px)">
-                <img src="img/portfolio/menu_desktop.png" alt="Mobile menu">
-              </picture>
-            </div>
-            <p>
-              During this phase, I had the issue that the menu still showed up in tablet and desktop view.
-              After some experimentation and research on StackOverflow, I solved the issue by adding media queries to the JavaScript code.
-            </p>
-            <h5>JavaScript code to make the toggle menu work</h5>
-            <div class="image">
-              <picture>
-                <source srcset="img/portfolio/JS_mobile.png" media="(max-width:767px)">
-                <img src="img/portfolio/JS_desktop.png" alt="JavaScript snippet ">
-              </picture>
+            <div class="wrapper">
+              <h3>Applying CSS Styling</h3>
+              <p>
+                With the HTML structure in place, it was time to apply some CSS styling to add a personal flair to the site.
+                CSS stands for cascading style sheet and controls how HTML is presented in the browser.
+              </p>
+              <p>
+                First, I embedded the google fonts I had decided on earlier and defined text styling, such as font-sizes, font-weight, line-height for h1-h5 headings, and body text.
+                Afterwards, I also applied colors and added link styling for different states to give my website the intended look and feel.
+              </p>
+              <h5>Link styling for different states</h5>
+              <div class="image-portfolio">
+                <picture>
+                  <source srcset="img/portfolio/link_mobile.png" media="(max-width:767px)">
+                  <img src="img/portfolio/link_desktop.png" alt="Link styling snippet">
+                </picture>
+              </div>
+              <h4>Button Styling</h4>
+              <p>
+                I also made use of transition effects on buttons to make them more accessible and interactive for users.
+                CSS transition defines the animation between a start and end state.
+                I used them to create a smooth transition for drop shadows on buttons upon hover.
+              </p>
+              <h5>Button styling with transitions</h5>
+              <div class="image-portfolio">
+                <picture>
+                  <source srcset="img/portfolio/button_mobile.png" media="(max-width:767px)">
+                  <img src="img/portfolio/button_desktop.png" alt="Button styling snippet">
+                </picture>
+              </div>
+              <p>
+              <h4>Adjusting the Layout with Media Queries</h4>
+              <p>To create the layout for the homepage, about and project pages, I followed the wireframes provided in the brief. I made use of a 12-column grid and
+                adjusted the layout for medium and larger screen sizes with media queries. Media queries allow for writing code that will only affect the layout up, to, or from a defined breakpoint.
+                I used them to adjust the spacing between columns for larger screen sizes and to define font-sizes for h1-h5 headings for better readability on tablet and desktop.
+              </p>
+              <h5>Styling of font-sizes with media queries</h5>
+              <div class="image-portfolio">
+                <picture>
+                  <source srcset="img/portfolio/media_mobile.png" media="(max-width:767px)">
+                  <img src="img/portfolio/media_desktop.png" alt="media queries">
+                </picture>
+              </div>
+              <p>
+                To check the layout and styling for different viewports, I heavily relied on the "inspect" mode in google chrome to see the results of my changes and
+                do some troubleshooting when the positioning of elements was off.
+              </p>
+              <h3>Adding Interactivity with JavaScript</h3>
+              <p>
+                Next, I used Javascript to add some interactivity to my website by adding a mobile menu, that could be toggled on and off on click.
+                The menu should allow users to navigate the site more easily on mobile devices.
+                The challenge here was to keep the navigation bar for tablet and desktop and make the toggle menu only work on mobile.
+              </p>
+              <div class="menu">
+                <picture>
+                  <source srcset="img/portfolio/menu_mobile.png" media="(max-width:767px)">
+                  <img src="img/portfolio/menu_desktop.png" alt="Mobile menu">
+                </picture>
+              </div>
+              <p>
+                During this phase, I had the issue that the menu still showed up in tablet and desktop view.
+                After some experimentation and research on StackOverflow, I solved the issue by adding media queries to the JavaScript code.
+              </p>
+              <h5>JavaScript code to make the toggle menu work</h5>
+              <div class="image-portfolio">
+                <picture>
+                  <source srcset="img/portfolio/JS_mobile.png" media="(max-width:767px)">
+                  <img src="img/portfolio/JS_desktop.png" alt="JavaScript snippet ">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
       <!-- Divider -->
       <section class="section-3">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>User Testing</h2>
           </div>
         </div>
@@ -312,11 +312,10 @@
       <!-- Divider -->
       <section class="section-4">
         <div class="divider">
-          <div>
-            <h2>Final Solution</h2>
+          <div class="container">
           </div>
         </div>
-        <div class="mockups">
+        <div class="image">
           <picture>
             <source srcset="img/portfolio/mockup_mobile.jpg" media="(max-width:767px)">
             <img src="img/portfolio/mockup_desktop.jpg" alt="Mockups of the final product">
@@ -326,7 +325,7 @@
       <!-- Divider -->
       <section class="section-5">
         <div class="divider">
-          <div>
+          <div class="container">
             <h2>Reflection</h2>
           </div>
         </div>
@@ -370,7 +369,7 @@
   </main>
   <!-- Footer  -->
   <footer id="contact">
-    <div class="container">
+    <div>
       <h2>Get in touch</h2>
       <p>
         Interested in working together? <br> Let's chat. <br>
