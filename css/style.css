@@ -395,10 +395,6 @@ nav ul li a:active {
   width: 100%;
 }
 
-#hero p {
-  font-size: 18px;
-}
-
 #index #hero {
   background-image: url("../img/selfie_2_mobile.png");
   background-color: #233445;
@@ -437,10 +433,6 @@ footer {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-}
-
-footer p {
-  font-size: 18px;
 }
 
 footer ul {
@@ -728,7 +720,7 @@ Layout styling End
 }
 
 .project-title {
-  font-size: 22px;
+  font-size: 24px;
   margin: 0;
   text-transform: capitalize;
 }
@@ -846,10 +838,6 @@ Layout styling End
     padding-top: 80px;
   }
 
-  #hero p {
-    font-size: 20px;
-  }
-
   .col-md-6 {
     padding: 0 20px;
     width: 50%;
@@ -860,6 +848,10 @@ Layout styling End
   #index #hero {
     background-image: url("../img/selfie_2_desktop.png");
     height: 300px;
+  }
+
+  #hero p {
+    font-size: 18px;
   }
 
   #index #hero .container {
