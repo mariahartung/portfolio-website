@@ -559,7 +559,7 @@ footer .fas {
 .divider .container h2 {
   text-align: left;
   border-bottom: 4px solid #f7f8f9;
-  margin: 25px 5px 0 0;
+  margin: 20px 5px 0 0;
 }
 
 .mockups {
@@ -691,8 +691,10 @@ Layout styling End
 }
 
 .image-values {
+  max-width: 310px;
   padding-bottom: 40px;
   padding-top: 20px;
+  margin-left: -5px;
 }
 
 .image-system {
@@ -720,7 +722,7 @@ Layout styling End
 }
 
 .project-title {
-  font-size: 24px;
+  font-size: 22px;
   margin: 0;
   text-transform: capitalize;
 }
@@ -1013,6 +1015,11 @@ Layout styling End
     max-width: 700px;
   }
 
+  .image-values {
+      max-width: 1080px;
+      margin-left: 0;
+    }
+
   #solution .col-md-6 {
     padding: 20px 20px 20px 0;
   }
@@ -1258,6 +1265,10 @@ Layout styling End
       max-width: 1200px;
     }
 
+    .divider .container h2 {
+      margin-top: 30px;
+    }
+
     .col-lg-2 {
       float: left;
       padding-right: 30px;
@@ -1305,7 +1316,6 @@ Layout styling End
     }
 
     .image-values {
-      max-width: 1200px;
       padding-bottom: 60px;
     }
 
@@ -1382,6 +1392,10 @@ Layout styling End
         font-size: 22px;
       }
 
+      .divider .container h2 {
+        margin-top: 35px;
+      }
+
       .col-lg-2 {
         float: left;
         padding-right: 30px;
@@ -1390,6 +1404,10 @@ Layout styling End
       .image-system {
         max-width: 1280px;
         margin: 0 auto;
+      }
+
+      .image-values {
+        padding-top: 30px;
       }
 
       @media only screen and (min-width: 1440px) {
