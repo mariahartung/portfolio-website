@@ -117,16 +117,16 @@ h1 {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3;
-  color: #2f2f2f;
+  color: #323232;
   background-color: inherit;
   text-align: center;
 }
 
 #index #hero h1 {
-  color: #fff;
+  color: #323232;
   background-color: inherit;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
 }
 
 #impressum h1 {
@@ -135,10 +135,10 @@ h1 {
 
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.3;
-  color: #2f2f2f;
+  color: #323232;
   background-color: inherit;
   text-align: center;
 }
@@ -146,6 +146,7 @@ h2 {
 footer h2 {
   color: #fff;
   background-color: inherit;
+  text-align: center;
 }
 
 h3 {
@@ -153,7 +154,7 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
-  color: #2f2f2f;
+  color: #323232;
   background-color: inherit;
 }
 
@@ -162,7 +163,7 @@ h4 {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
-  color: #2f2f2f;
+  color: #323232;
   background-color: inherit;
 }
 
@@ -171,7 +172,7 @@ h5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.6;
-  color: #2f2f2f;
+  color: #323232;
   background-color: inherit;
 }
 
@@ -184,12 +185,12 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   line-height: 1.4;
-  color: #2f2f2f;
+  color: #323232;
   text-decoration: none;
 }
 
 a:visited {
-  color: #2f2f2f;
+  color: #323232;
 }
 
 a:hover,
@@ -224,7 +225,7 @@ a:active {
 .button-testing:focus,
 .button-prototype:hover,
 .button-prototype:focus {
-  color: #2f2f2f;
+  color: #323232;
   background-color: #ffdb5a;
   box-shadow: 2px 2px 8px 0 rgba(47, 47, 47, 0.3);
 }
@@ -232,7 +233,7 @@ a:active {
 .button-project:active,
 .button-testing:active,
 .button-prototype:active {
-  color: #2f2f2f;
+  color: #323232;
 }
 
 .button-testing {
@@ -255,13 +256,13 @@ a:active {
 
 .button-contact:hover,
 .button-contact:focus {
-  color: #2f2f2f;
+  color: #323232;
   background-color: #ffdb5a;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .button-contact:active {
-  color: #2f2f2f;
+  color: #323232;
   background-color: #ffdb5a;
 }
 
@@ -389,16 +390,14 @@ nav ul li a:active {
 }
 
 #hero {
-  color: #fff;
+  color: #323232;
   text-align: center;
   display: inline-block;
   width: 100%;
 }
 
 #index #hero {
-  background-image: url("../img/selfie_2_mobile.png");
-  background-color: #233445;
-  height: 250px;
+  height: 150px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -406,14 +405,9 @@ nav ul li a:active {
 }
 
 #index #hero .container {
-  text-align: left;
-  position: absolute;
-  top: 12%;
-}
-
-#work {
-  margin-top: 30px;
-  margin-bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 #work .row {
@@ -532,7 +526,7 @@ footer .fas {
 }
 
 .selfie {
-  max-width: 767px;
+  max-width: 1165px;
   margin: 0 auto;
   line-height: 0;
 }
@@ -544,7 +538,7 @@ footer .fas {
 
 #expert #hero {
   margin: 0 auto;
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
   display: inline-block;
 }
 
@@ -590,7 +584,7 @@ footer .fas {
 
 #worldup #hero {
   color: inherit;
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
   padding: 0;
 }
 
@@ -691,10 +685,19 @@ Layout styling End
 }
 
 .image-values {
-  max-width: 310px;
-  padding-bottom: 40px;
-  padding-top: 20px;
+  max-width: 260px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   margin-left: -5px;
+}
+
+.image-process {
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.image-cartbefore {
+  margin-left: -15px;
 }
 
 .image-system {
@@ -707,7 +710,7 @@ Layout styling End
 }
 
 .image-responsive {
-  margin: 0 -10px;
+  margin: 20px 0px;
 }
 
 .gif {
@@ -755,10 +758,6 @@ Layout styling End
 @media only screen and (min-width: 640px) {
   body {
     font-size: 16px;
-  }
-
-  h1 {
-    font-size: 28px;
   }
 
   h2 {
@@ -848,8 +847,7 @@ Layout styling End
   }
 
   #index #hero {
-    background-image: url("../img/selfie_2_desktop.png");
-    height: 300px;
+    height: 150px;
   }
 
   #hero p {
@@ -857,7 +855,7 @@ Layout styling End
   }
 
   #index #hero .container {
-    top: 20%;
+    padding-top: 30px;
   }
 
   #index .col-md-6 {
@@ -875,7 +873,7 @@ Layout styling End
   }
 
   #work {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 10px;
   }
 
@@ -933,7 +931,7 @@ Layout styling End
 
   #expert .container-hero,
   #worldup .container-hero {
-    max-width: 1500px;
+    max-width: 1220px;
     margin: 0 auto;
   }
 
@@ -945,13 +943,17 @@ Layout styling End
 
   #expert .wrapper,
   #worldup .wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 
   #expert .container p,
   #worldup .container p {
     max-width: 500px;
+  }
+
+  #about .wrapper p {
+    max-width: 800px;
   }
 
   #expert h1 {
@@ -983,8 +985,20 @@ Layout styling End
   }
 
   .design-thinking {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 650px;
+  }
+
+  .image-process {
+    max-width: 460px;
+    margin-top: 30px;
+  }
+
+  .image-cart {
+    max-width: 960px;
+  }
+
+  .image-values {
+    max-width: 1024px;
   }
 
   .image {
@@ -1002,7 +1016,7 @@ Layout styling End
   }
 
   .image-responsive {
-    margin: 0 -15px;
+    margin: 20px 0px 20px -15px;
   }
 
   .image-wireframes {
@@ -1015,10 +1029,10 @@ Layout styling End
     max-width: 700px;
   }
 
-  .image-values {
-      max-width: 1080px;
-      margin-left: 0;
-    }
+  .image-icons {
+    max-width: 600px;
+    margin: 30px 0;
+  }
 
   #solution .col-md-6 {
     padding: 20px 20px 20px 0;
@@ -1095,7 +1109,12 @@ Layout styling End
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 32px;
+    }
+
+    #work h2,
+    #contact h2 {
+      font-size: 28px;
     }
 
     #about-me .row h2 {
@@ -1150,11 +1169,11 @@ Layout styling End
     }
 
     #index #hero {
-      height: 360px;
+      height: 180px;
     }
 
     #index #hero .container {
-      top: 20%;
+      padding-top: 40px;
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
@@ -1162,7 +1181,7 @@ Layout styling End
     }
 
     #work {
-      margin-top: 50px;
+      margin-top: 0px;
       margin-bottom: 10px;
     }
 
@@ -1271,7 +1290,7 @@ Layout styling End
 
     .col-lg-2 {
       float: left;
-      padding-right: 30px;
+      padding-right: 40px;
     }
 
     .col-lg-2::after {
@@ -1287,12 +1306,15 @@ Layout styling End
     .image {
       max-width: 100%;
       padding: 30px 0;
-      margin: 0 auto;
     }
 
     .image-system {
       max-width: 1280px;
       margin: 0 -25px;
+    }
+
+    .image-cartbefore {
+      margin-left: -30px;
     }
 
     .survey {
@@ -1316,6 +1338,8 @@ Layout styling End
     }
 
     .image-values {
+      max-width: 1024px;
+      margin-left: 0;
       padding-bottom: 60px;
     }
 
@@ -1372,20 +1396,17 @@ Layout styling End
         padding-right: 30px;
       }
 
-      h1 {
-        font-size: 36px;
-      }
-
-      #index h2 {
-        font-size: 32px;
-      }
-
       #index #hero {
-        height: 450px;
+        height: 200px;
       }
 
       #index #hero .container {
-        top: 30%;
+        padding-top: 40px;
+      }
+
+      #work h2,
+      #contact h2 {
+        font-size: 30px;
       }
 
       #hero p {
@@ -1398,7 +1419,7 @@ Layout styling End
 
       .col-lg-2 {
         float: left;
-        padding-right: 30px;
+        padding-right: 60px;
       }
 
       .image-system {
@@ -1412,7 +1433,7 @@ Layout styling End
 
       @media only screen and (min-width: 1440px) {
         #index #hero .container {
-          top: 30%;
+          padding-top: 40px;
         }
       }
     }

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/e32f73a6fe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Savly">
+  <meta property="og:description" content="Web app built to minimize food waste by heling professionals to keep track of food, cook with available ingredients, and buy missing ones through the app.">
+  <meta property="og:image" content="img/lenslane/lenslane_linkedin.jpg">
+  <meta property="og:url" content="https://mariahartung.com/savly.html">
+  <title>Lenslane</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#2d3e50">
+  <meta name="msapplication-TileColor" content="#2d3e50">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body id="expert">
+  <nav id="dot-nav"></nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="wrapper-logo">
+          <a href="index.html"><img src="img/Logo_v2.svg" class="logo" alt="Maria Hartung Logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><span class="underline-work">Work</span></a></li>
+            <li><a href="about.html"><span class="underline-about">About</span></a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i><i class="fas fa-times"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <div>
+      <section class="in-viewport section-0">
+        <!-- Hero Section -->
+        <div id="hero">
+          <div class="container-hero">
+            <picture>
+              <source srcset="img/lenslane/m_hero.jpg" media="(max-width:767px)">
+              <img src="img/lenslane/d_hero.jpg" alt="hero savly image">
+            </picture>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h1>Lenslane</h1>
+            <div class="row">
+              <h3>Project Summary</h3>
+              <p>
+                Finding a professional photographer who offers the style you want for your event can be a time-consuming process. Intransparent pricing, unclear availability, and generic reviews only add to the frustration and extend the time it
+                takes to make a decision.
+              </p>
+              <p>To solve this problem, our team set out to create a digital photography marketplace called Lenslane. It is built to connect local photographers with clients and speed up the process of finding and booking shoots for different
+                occasions.
+              </p>
+              <h3>Constraints</h3>
+              <p><b>Business:</b> The product should be free to use, but requires clients to pay a flat fee for booking different shoots. To generate revenue for the business, it also offers a monthly subscription-based service for photographers. As
+                part of the subscription, photographers can list photo shoots on the platform to increase their reach and attract new clients.
+              </p>
+              <p><b>Technical:</b> The responsive web app should be built with a mobile-first approach and be accessible across mobile and desktop devices.
+              </p>
+              <div class="row-project">
+                <div class="col-lg-2">
+                  <b>Project Type</b>
+                  <ul class="project-info">
+                    <li>Concept
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-lg-2">
+                  <b>Timeline</b>
+                  <ul class="project-info">
+                    <li>Nov 2022 - <br> Apr 2023
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <b>Team</b>
+                  <ul class="project-info">
+                    <li>Project Lead - Damilare F.
+                    </li>
+                    <li>UX/UI Designer - Yashika M.
+                    </li>
+                    <li>UX/UI Designer - Maria H.
+                    </li>
+                    <li>Developer - Juliana R. / Jerry F.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <b>Responsible for</b>
+                  <ul class="project-info">
+                    <li>Competitive Analysis
+                    </li>
+                    <li>User Research (client side)
+                    </li>
+                    <li>Information Architecture
+                    </li>
+                    <li>Wireframing & Prototyping
+                    </li>
+                    <li>Usability Testing
+                    </li>
+                    <li>UI Design
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <b>Tools</b>
+                  <ul class="project-info">
+                    <li>Figma
+                    </li>
+                    <li>Sketch
+                    </li>
+                    <li>Axure
+                    </li>
+                    <li>Balsamiq
+                    </li>
+                    <li>Notion & Google
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-1">
+        <div class="divider">
+          <div class="container">
+            <h2>The Challenge</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                When looking for a professional photographer for their event, users have a specific style in mind. Browsing through portfolios, reading reviews, and narrowing down results often takes a lot of time and slows down their decision-making
+                process.
+              </p>
+              <p>In addition, pricing and availability are not always clearly stated on websites, making it difficult to estimate costs and plan ahead. Due to past disappointments, it's also hard for users to get a feel for the professionalism and
+                image quality of the photographer before investing time and money in the shoot.
+              </p>
+              <p>
+                After initial discovery research, we were able to come up with a problem statement and hypothesis:
+              </p>
+              <h4>Problem Statement</h4>
+              <p>
+                Lea needs a quick way to find a local and affordable photographer for her wedding day because she spends too much time on reviewing their work and narrowing down choices online.
+              </p>
+              <h4>Hyothesis Statement</h4>
+              <p>
+                We believe that by building a centralized digital photography marketplace where Lea can easily find, filter and book photo shoots with trusted photographers in her area, we will speed up her search process and increase bookings
+                conversion rates by 15%.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="divider">
+          <div class="container">
+            <h2>Process</h2>
+          </div>
+        </div>
+        <!-- Divider End-->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Design Thinking</h3>
+            <p>
+              To solve the problem, we applied the design thinking methodology during the project. It was used to understand the user, define the problem, and create a user-centered solution in six phases.
+            </p>
+          </div>
+          <div class="design-thinking">
+            <picture>
+              <source srcset="img/expert/designthinking_mobile.png" media="(max-width:767px)">
+              <img src="img/expert/designthinking_desktop.png" alt="DesignThinking">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-2">
+        <div class="divider">
+          <div class="container">
+            <h2>Project Kickoff</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Detours & Pivots</h3>
+            <p>
+              Although the purpose of this project was to create a digital photography marketplace, it was not the first idea we settled on. Initially, we started out with a problem assumption that focused on the lack of findability of photo walks
+              and workshops online.
+              Hence, the plan was to create a centralized platform that would improve the discoverability of these types of events and streamline the booking experience.
+            </p>
+            <p>
+              After discussing the idea with the team, we decided to validate our assumptions as soon as possible to see if we were on the right track. After 3 days of surveying potential users on Reddit and Slack, the results were sobering.
+            </p>
+            <p>
+              Survey results showed that finding photo walks and workshops was not a problem for users. The demand for our idea was quite low, as most users hadn't attended these photo events in the past year. Therefore, the majority of users
+              wouldn't consider using our platform.
+            </p>
+            <div class="survey">
+              <picture>
+                <source srcset="img/lenslane/d_survey.png" media="(max-width:767px)">
+                <img src="img/lenslane/d_survey.png" alt="Feature Audit">
+              </picture>
+            </div>
+            <p>After sharing the results with the team, we put our heads together to brainstorm ideas and pivot in a different direction. At the time, the idea for a digital photography marketplace for professional photographers and clients was born.
+              However, it was clear that we needed to invest more time this time to better understand the problem and market demand.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Divider End -->
+      <section class="section-3">
+        <div class="divider">
+          <div class="container">
+            <h2>Understand</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Desk Research & Competitive Analysis</h3>
+            <p>
+              We began by conducting in-depth desk research and analysis of 9 competing web apps to better understand the problem space and find competitive advantages for our product.
+            </p>
+            <div class="image-icons">
+              <picture>
+                <source srcset="img/lenslane/m_apps.jpg" media="(max-width:767px)">
+                <img src="img/lenslane/d_apps.jpg" alt="Feature Audit">
+              </picture>
+            </div>
+            <h4>This approach was beneficial in two ways:</h4>
+            <p>
+              First, desk research on Reddit and specialized photographer forums allowed us to identify current struggles among clients and professional photographers regarding client management and booking photographers. These insights were later
+              used to brainstorm research objectives for user interviews.
+            </p>
+            <p>
+              Second, a competitive analysis of strengths, weaknesses, search and booking experiences, revenue models, and load times helped us evaluate what's already out there and understand how to successfully differentiate our product in the
+              market. After compiling our findings into SWOT profiles, we decided on the following opportunities:
+            </p>
+            <div class="wrapper">
+              <h3>Opportunities for Lenslane</h3>
+              <ul>
+                <li> Clear search, navigation, and categorization of content.</li>
+                <li> View photographer’s portfolio and profiles before booking.</li>
+                <li> Create a short booking experience.</li>
+                <li> Transparent pricing.</li>
+                <li> Enable direct messaging and notifications.</li>
+                <li> Clean and visually appealing design that is optimized across devices.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-4">
+        <div class="divider">
+          <div class="container">
+            <h2>Observe</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>User Interviews</h3>
+            <p>
+              Next, we recruited and interviewed 3 photographers and 4 clients to understand their needs and goals. To use our time efficiently, we decided to split the research. Yashika was responsible for interviewing photographers while I did the
+              same with clients.
+            </p>
+            <p>
+              Recruiting users was challenging and took longer than expected for both of us. After an open discussion about our struggles, we finally decided to go with the small sample size we had because our sessions were already rich with valuable
+              information.
+            </p>
+            <h4>Research Goals - Clients</h4>
+            <ul>
+              <li> Understand users' general experiences, tasks, and workflows for finding and booking photographers online. </li>
+              <li> Identify common obstacles and pain points for finding and booking photographers.</li>
+              <li> Learn more about what information users need before, during, and after booking a photographer.</li>
+              <li> Determine how users would like to get in touch with photographers.</li>
+              <li> Understand what users expect from a digital photography marketplace.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h3>Affinity Mapping</h3>
+            <p>
+              After the transcription of interviews, we used affinity mapping to make sense of the data and find common patterns in users' responses.
+              With this technique similar responses are grouped into clusters. These were later used to generate insights.
+            </p>
+            <div class="full-width">
+              <picture>
+                <source srcset="img/lenslane/m_painpoints.jpg" media="(max-width:767px)">
+                <img src="img/lenslane/d_painpoints.jpg" alt="Cluster pain points">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <h3>Key Findings</h3>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/lenslane/m_findings.jpg" media="(max-width:767px)">
+              <img src="img/lenslane/d_findings.jpg" alt="Findings">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-5">
+        <div class="divider">
+          <div class="container">
+            <h2>POV</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Empathizing with the User</h3>
+            <p>
+              Next, we used our research findings to create a persona and empathize with user’s needs, goals, and frustrations.
+              As a reference throughout the project, the persona ensured that user needs and goals remained at the forefront of product decisions.
+            </p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/lenslane/m_persona.jpg" media="(max-width:767px)">
+              <img src="img/lenslane/d_persona.jpg" alt="Persona Ben">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-6">
+        <div class="divider">
+          <div class="container">
+            <h2>Ideate</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Mapping Out the Journey</h3>
+            <p>
+              Using the persona as a guide, we created user journey maps to visualize the process Lea would need to go through to accomplish her goals in Lenslane.
+            </p>
+            <p><b>Lea's Journey:</b> Lea is getting married in a month. She has already spent time searching for photographers online, but is having trouble finding one with her desired style.
+              She will use our app to book a local, affordable and experienced wedding photographer with the style she has in mind.
+            </p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/lenslane/m_journey.jpg" media="(max-width:767px)">
+              <img src="img/lenslane/d_journey.jpg" alt="User Journey Map Lea">
+            </picture>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h4>Based on the journey maps, we prioritized the following key features:</h4>
+            <ul>
+              <li>Sign up & onboarding</li>
+              <li>Search for photographer</li>
+              <li>Check availability</li>
+              <li>Book session</li>
+              <li>Message photographer</li>
+              <li>Select and submit images for editing</li>
+              <li>Download final images</li>
+            </ul>
+            <h3>User Flows</h3>
+            <p>
+              Using the journey maps and personas as a guide, we created user flows to understand the specific tasks Lea would need to complete and the pages needed to complete them.
+            </p>
+            <p>
+              The challenge here was to decide whether to keep or remove onboarding from the flow, since the main information about how the app works is provided on the homepage. In the end, we decided to keep the personalized onboarding and use it
+              as a way to speed up the search process for users.
+            </p>
+            <h5>User flow for finding a wedding photographer</h5>
+          </div>
+          <div class="image-system">
+            <picture>
+              <source srcset="img/lenslane/m_userflow.jpg" media="(max-width:767px)">
+              <img src="img/lenslane/d_userflow.jpg" alt="User Flow Search for photographer">
+            </picture>
+          </div>
+          <div class="wrapper">
+            <h3>Information Architecture</h3>
+            <p>
+              With the user flows and journey maps in hand, we created a sitemap to organize the photographer and client pages for the web app.
+            </p>
+            <p>
+              The challenge at this stage was to decide which pages would be accessible to the different user groups to support efficient use of the web app. We wanted to identify key pages based on the different content displayed for clients and
+              photographers, and merge related pages for easy navigation.
+            </p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/lenslane/m_sitemap.jpg" media="(max-width:767px)">
+              <img src="img/lenslane/d_sitemap.jpg" alt="Sitemap Before Cardsort">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-7">
+        <div class="divider">
+          <div class="container">
+            <h2>Prototype</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Exploring possible solutions</h3>
+            <p>
+              Using the sitemap, user flows, and personas, we started creating low-to mid- fidelity wireframes for key features by rapidly prototyping different solutions.
+              First, we created rough sketches for mobile and desktop using pen and paper, Lucidchart, and Balsamiq. We then took them to Figma to build a first mid-fidelity prototype that was ready to be tested with real users.
+            </p>
+            <p>
+              A key challenge was to adapt the design for mobile and desktop and to keep technical limitations in mind. For example, a first version included a calendar for checking availability on mobile, which was later replaced by a date picker
+              for performance reasons. We also decided to design the desktop version at a resolution of 800 x 600 px to accommodate people with older monitors at this stage.
+            </p>
+            <div class="image">
+              <picture>
+                <source srcset="img/lenslane/m_midfi_wireframes.jpg" media="(max-width:767px)">
+                <img src="img/lenslane/d_midfi_wireframes.jpg" alt="Mid-Fidelity Wireframes">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-8">
+        <div class="divider">
+          <div class="container">
+            <h2>Test</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Usability Testing</h3>
+            <p>
+              To validate our solution, we conducted a moderated remote usability tests with 5 participants via Google Meet.
+              The goal of the usability tests was to assess learnability, efficiency, and errors for first-time users.
+            </p>
+            <ul>
+              <li> Do users understand the web app and its value?</li>
+              <li> Can users successfully and complete basic tasks? </li>
+              <li> How long does it take for users to complete tasks? </li>
+              <li> What errors do occur frequently and how severe are they?</li>
+            </ul>
+            <p>
+              We then used affinity mapping and a rainbow spreadsheet to organize findings and prioritize issues to be fixed. Errors were measured by using Jakob Nielsen’s rating scale. We also measured satisfaction with the Single Ease Question at
+              the end of each task by asking users to rate the difficulty of the task.
+            </p>
+          </div>
+          <div class="wrapper">
+            <h4>Test Results</h4>
+            <div class="image-numbers">
+              <picture>
+                <source srcset="img/lenslane/m_results.png" media="(max-width:767px)">
+                <img src="img/lenslane/d_results.png" alt="Numbers">
+              </picture>
+            </div>
+            <p>
+              The overall feedback was mostly positive, but the test results also brought some critical issues to light. All participants found the app simple, straightforward, and easy to use. Most were able to complete tasks quickly and easily. The
+              biggest issues were finding a photographer, unclear pricing, and confusing information on the dashboard.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <h4>Issue 1: Stuck on the task of finding a photographer (Severity: 4).</h4>
+            <p>
+              2/ 5 users were unable to find a photographer because they were stuck on the task. All users clicked on wedding categories on the homepage instead of using the search bar to find a photographer. They also didn't notice the filters in
+              the search results and complained about information overload on the photographer page, which distracted them from the task at hand.
+            </p>
+            <p>
+              To address this, we redesigned the photographers page by reducing the number of visible categories and improving the visual hierarchy. We also linked categories to search results to make browsing easier, and added a filter button for
+              better discoverability.
+            </p>
+            <div class="image">
+              <picture>
+                <source srcset="img/lenslane/m_photographers.jpg" media="(max-width:767px)">
+                <img src="img/lenslane/d_photographers.jpg" alt="Issue 1">
+              </picture>
+            </div>
+            <h4>Issue 2: It’s not clear how pricing works (Severity: 3).</h4>
+            <p>
+              3/5 users were confused about the difference between photographer pricing and pricing packages. It was also not clear how many edited images they would receive after the shoot.
+            </p>
+            <p>
+              As a result, we created a new pricing page with a FAQ section to provide more transparency on costs and the booking process.
+            </p>
+          </div>
+          <div class="image">
+            <picture>
+              <source srcset="img/lenslane/m_pricing.jpg" media="(max-width:767px)">
+              <img src="img/lenslane/d_pricing.jpg" alt="Issue 2">
+            </picture>
+          </div>
+          <div class="image-hidden">
+            <h4>Issue 3: Confusing information and missed notifications (Severity: 3).</h4>
+            <p>
+              2/5 users found the information about upcoming sessions on the dashboard confusing and thought the notification text was not clickable. One user was also concerned about finding a way to revisit his images later once the notification
+              was gone.
+            </p>
+            <p>To solve this issue, we redesigned the dashboard. We placed notifications on top of the page for easy orientation and added image thumbnails from recent sessions to provide more visual cues to click on.
+              In addition to that, we added a button to view images from recent and completed sessions for easy access at all times.
+            </p>
+          </div>
+          <div class="image-hidden">
+            <picture>
+              <source srcset="img/lenslane/m_dashboard.jpg" media="(max-width:767px)">
+              <img src="img/lenslane/d_dashboard.jpg" alt="Issue 3">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Divider -->
+      <section class="section-9">
+        <div class="divider">
+          <div class="container">
+            <h2>Visual Design</h2>
+          </div>
+        </div>
+        <!-- Divider End -->
+        <div class="container">
+          <div class="wrapper">
+            <h3>Color Choice & Typography</h3>
+            <p>
+              Once issues had been ironed out, it was time to bring Lenslane to life with the visuals. The key challenge was to find an appropriate color palette that fit our brand. Using color psychology, we experimented with options ranging from
+              green to blue to brown.
+            </p>
+            <p>
+              In the end, we went with purple and pastel tones to emphasize photographers' creativity and elegance of photographic styles. In the same vein, we chose to use DM Serif Display combined with DM Sans to create a modern, friendly, and
+              elegant look and feel.
+            </p>
+            <div class="image">
+              <picture>
+                <source srcset="img/lenslane/m_styleguide.jpg" media="(max-width:767px)">
+                <img src="img/lenslane/d_styleguide.jpg" alt="Colors">
+              </picture>
+            </div>
+          </div>
+        </div>
+    <!-- Divider -->
+    <div class="divider">
+      <div class="container">
+        <h2>Mockups</h2>
+      </div>
+    </div>
+    <!-- Divider End -->
+    <div class="container">
+      <div class="image-responsive">
+        <picture>
+          <source srcset="img/lenslane/m_mockups_mobile.jpg" media="(max-width:767px)">
+          <img src="img/lenslane/d_mockups_mobile.jpg" alt="Mockups">
+        </picture>
+      </div>
+      <div class="image">
+        <picture>
+          <source srcset="img/lenslane/m_mockups_desktop1.jpg" media="(max-width:767px)">
+          <img src="img/lenslane/d_mockups_desktop1.jpg" alt="Mockups">
+        </picture>
+      </div>
+      <div class="image">
+        <picture>
+          <source srcset="img/lenslane/m_mockups_desktop2.jpg" media="(max-width:767px)">
+          <img src="img/lenslane/d_mockups_desktop2.jpg" alt="Mockups">
+        </picture>
+      </div>
+    </div>
+    <!-- Divider -->
+    <div class="divider">
+      <div class="container">
+        <h2>View Prototype</h2>
+      </div>
+    </div>
+    <!-- Divider End -->
+    <div class="container">
+      <div class="wrapper">
+        <p>
+          After having implemented user testing feedback and the visual design, we finalized the prototype using Figma.
+          Feel free to interact with the prototype to see how it works.
+        </p>
+        <div>
+          <a href="https://www.figma.com/proto/rVOLvi2QHM9NCxMleMoPZt/Lenslane?page-id=0%3A1&node-id=1-260&viewport=2482%2C805%2C0.13&scaling=scale-down&starting-point-node-id=1%3A260" class="button-testing" target="_blank">
+            Mobile Prototype</a>
+          <a href="https://www.figma.com/proto/rVOLvi2QHM9NCxMleMoPZt/Lenslane?page-id=1%3A480&node-id=1-481&viewport=2026%2C730%2C0.13&scaling=scale-down&starting-point-node-id=1%3A481" class="button-testing" target="_blank">
+            Desktop Prototype</a>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Divider -->
+    <section class="section-10">
+      <div class="divider">
+        <div class="container">
+          <h2>Final Solution</h2>
+        </div>
+      </div>
+      <div id="solution">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <h3>Save time finding a professional photographer for your preferred style and occasion.</h3>
+              <p>
+                To help users quickly find the right photographer for their needs, we created a personalized onboarding process that takes them directly to search results upon completion.
+                Alternatively, users can select the categories and styles they are looking for on the homepage and on the photographer page to find suitable photographers.
+                For a faster search, advanced search filters are available for category, location, price range and style.
+                Transparent pricing and detailed reviews on the photographer profile also help users to speed up their decision-making process.
+              </p>
+            </div>
+            <div class="left">
+              <div class="gif">
+                <img src="img/lenslane/find_photographer.gif" alt="Find photographer Gif">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6-right col-lg-6-right">
+              <h3>Take the guesswork out of photographer availability.</h3>
+              <p>
+                Checking photographer availability can involve a lot of back-and-forth messaging that takes up a lot of time. To provide a simple solution, checking availability is now as easy as a few clicks. Users receive instant feedback on
+                whether the photographer is available for their event and can book directly from here.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <div class="gif">
+                <img src="img/lenslane/check_availability.gif" alt="Check availability Gif">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <h3>Quickly book a professional photographer for your event.</h3>
+              <p>
+                When users are busy planning their event, the last thing they need is a lengthy booking process.
+                In order to create a quick and efficient booking experience, we limited the number of steps involved in the process, made use of default states, and pre-populated personal information for existing users.
+              </p>
+            </div>
+            <div class="left">
+              <div class="gif">
+                <img src="img/lenslane/book_session.gif" alt="Book session Gif">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6-right col-lg-6-right">
+              <h3>Submit your favorite images for editing and influence the final result.</h3>
+              <p>
+                Often, users have little control over the final image quality after the shoot.
+                This can be frustrating when images don't turn out as expected.
+                To give users more control over the outcome, they can add notes and reference numbered images to express additional wishes for editing.
+                After 48 hours, users receive their final images and can download them all at once.
+              </p>
+            </div>
+            <div class="left">
+              <div class="gif">
+                <img src="img/lenslane/select_images.gif" alt="Select images Gif">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <section class="section-11">
+      <div class="divider">
+        <div class="container">
+          <h2>Learnings</h2>
+        </div>
+      </div>
+      <!-- Divider End -->
+      <div class="container">
+        <div class="wrapper-learnings">
+          <p>
+            The Lenslane project has been an invaluable growth experience for all of us. It made us more resilient and sparked our imagination to come up with different solutions to the problems we encountered along the way.
+          </p>
+          <p>
+            Validating our idea with users early on was critical to pivoting in a direction that was more aligned with user needs. By investing time in research and understanding the problem better, we were able to create a solution that more
+            effectively solves user problems.
+          </p>
+          <p>
+            Personally, I'm grateful for the experience and very proud of what we accomplished as a team. Being a part of this project has allowed me to grow professionally and personally. It allowed me to improve my collaboration, communication,
+            and presentation skills, as well as strengthen my skills as a UX designer. Special thanks to my teammates and everyone whose valuable insights helped shape the product.
+          </p>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+  <!-- Footer  -->
+  <footer id="contact">
+    <div>
+      <h2>Get in touch</h2>
+      <p>
+        Interested in working together? <br> Let's chat. <br>
+      </p>
+      <div class="center">
+        <a href="mailto:mariahartung@gmx.de" class="button-contact">Send Email</a>
+      </div>
+      <div class="icons">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/maria-hartung/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="impressum.html" class="impressum">Legal Notice | </a>
+        <a href="datenschutzerklaerung.html" class="impressum">Privacy Policy |</a>
+        <p class="copyright">
+          © Maria Hartung 2020-2021
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="dot-nav-min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
