@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Savly">
-  <meta property="og:description" content="Web app built to minimize food waste by heling professionals to keep track of food, cook with available ingredients, and buy missing ones through the app.">
+  <meta property="og:description" content="All-in-one solution for keeping track of food and cooking with available ingredients to help busy professionals reduce food waste.">
   <meta property="og:image" content="img/savly/savly_linkedin.jpg">
   <meta property="og:url" content="https://mariahartung.com/savly.html">
   <title>Savly</title>
@@ -62,9 +62,12 @@
             <div class="row">
               <h3>Project Summary</h3>
               <p>
-                Browsing through a lot of recipes online only to find several ingredients missing for cooking a meal can be a frustrating experience.
-                Finding specific recipe ingredients to buy takes time; professionals often don’t have. Busy lifestyles and schedules
-                leave little time to keep track of food expiry dates as well, leading to food waste. To solve this problem, I created the responsive web app Savly.
+                Browsing through a variety of recipes to find the right one for available ingredients can be an overwhelming experience.
+                Finding specific recipe ingredients to buy takes time; professionals often don’t have. Busy lifestyles and schedules leave little time to keep track of food expiry dates as well.
+                As a result, they throw away small amounts of unused food each week.
+              </p>
+              <p>
+                To solve this problem, I created the responsive web app Savly.
                 It’s an all-in-one solution for keeping track of food, cooking with available ingredients, and buying missing ingredients through an integrated shop.
               </p>
               <h3>Constraints</h3>
@@ -142,22 +145,29 @@
         <div class="container">
           <div class="wrapper">
             <div>
-              <h3>Problem</h3>
+              <h3>How might we relieve the stress of finding recipes for available ingredients, so that professionals can use up all of their food?</h3>
               <p>
-                When searching for a recipe to prepare a meal, ingredients are not always available. Browsing through a sea of recipes online is overwhelming and hinders professionals in making quick decisions when short on time.
-                Once started cooking, their process is often slowed down because of inaccurate instructions and converting units from a different metric system by hand. Due to busy schedules, they also tend to forget to keep track of
+                <b>Overwhelmed with choices: </b> When searching for a recipe to prepare a meal, ingredients are not always available. Browsing through a sea of recipes online is overwhelming and hinders professionals in making quick decisions when short on time.
+              </p>
+              <p>
+                <b>Converting units manually:</b> Once started cooking, their process is often slowed down because of inaccurate instructions and converting units from a different metric system by hand.
+              </p>
+              <p>
+                <b>Forgetting to keep track of expiry dates: </b> Due to busy schedules, users also tend to forget to keep track of
                 food expiry dates and throw out small amounts of unused food per week.
               </p>
-              <p>
-                There had to be a better way to streamline the home cooking experience and reduce food waste at the same time. After initial discovery research and
-                validating assumptions with users, I was able to come up with a problem statement:
-              </p>
-              <h3>Problem Statement</h3>
-              <p>
-                Busy professionals need a way to cook quick meals with available ingredients because they want to use up food they already have but are overwhelmed by choices for recipes online and forget to keep track of expiring food,
-                leading to food waste.
-                We will know this to be true when we see how many users use our app to cook recipes with available ingredients they add to the app.
-              </p>
+              <section class="accordion">
+                <details>
+                  <summary>Problem Statement</summary>
+                  <p>
+                    Busy professionals need a way to cook quick meals with available ingredients because they want to use up food they already have but are overwhelmed by choices for recipes online and forget to keep track of expiring food,
+                    leading to food waste.
+                  </p>
+                  <p>
+                    We will know this to be true when we see how many users use our app to cook recipes with available ingredients they add to the app.
+                  </p>
+                </details>
+              </section>
             </div>
           </div>
         </div>
@@ -271,16 +281,14 @@
         <div class="container">
           <div class="wrapper">
             <h4>Survey Results</h4>
-            <p>
-              Survey findings revealed that our main target audience are 25-34 year-old professionals who live in 1-2 person households and mainly follow recipes on their mobile phones.
-              A majority of them have no dietary restrictions. 14.5% of users are vegetarian and 9.4% vegan. Over 70% use recipes to prepare their meals; however, frequency of use varies among users.
-              The main source for finding recipes are websites and cooking blogs, mostly accessed through a google search. Although they use their phones to read recipe directions, mobile apps are rarely used for recipe discovery.
-            </p>
-            <p>A surprising majority (72.7%) of users does not buy groceries online. This raises the question of why that is and has to be investigated further as it’s conflicting with business goals for the app.
-              To organize their shopping, 64% of users like to use shopping lists, 54.7% of them buy on impulse.
-            </p>
-            <p>When it comes to food waste, 70.9% of users tend to throw out small amounts of unused food per week. The main cause for this is loosing track of food expiry dates.
-            </p>
+            <ul>
+              <li>Our main target audience are 25-34 year-old professionals who live in 1-2 person households and mainly follow recipes on their mobile phones.</li>
+                <li>A majority of them has no dietary restrictions. 14.5% of users are vegetarian and 9.4% vegan.</li>
+                <li>Over 70% use recipes to prepare their meals. The main source for finding recipes are websites and cooking blogs, mostly accessed through a google search. Although they use their phones to read recipe directions, mobile apps are rarely used for recipe discovery.</li>
+                <li>A surprising majority (72.7%) of users does not buy groceries online. This raises the question of why that is and has to be investigated further as it’s conflicting with business goals for the app.</li>
+              <li>To organize their shopping, 64% of users like to use shopping lists, 54.7% of them buy on impulse.</li>
+            <li>When it comes to food waste, 70.9% of users tend to throw out small amounts of unused food per week. The main cause for this is loosing track of food expiry dates.</li>
+          </ul>
             <h5>Conclusions - Definition of the target audience & product requirements
             </h5>
             <p>Survey results helped me narrow down the primary target audience to seek out for user interviews next.
@@ -301,10 +309,36 @@
               <li> Find possible use cases for online grocery shopping and understand reasons why users are reluctant to buy groceries online.</li>
             </ul>
           </div>
+          <section class="accordion">
+              <h3> More Details</h3>
+              <details>
+                <summary>Method Selection</summary>
+              <p>
+                In addition to the survey, I chose semi-structured remote user interviews to clarify reasons for user reluctance to shop for groceries online and understand user needs and pain points more deeply. This method also allowed me to elicit valuable information by asking users follow-up questions to help drive design decisions.
+            </details>
+            <details>
+              <summary>Main Research Questions</summary>
+              <ul>
+                <li> Tell me about the last time you were looking for a recipe online to prepare a meal.</li>
+                <li> How would you describe your experience with recipe apps/websites you used? Why?</li>
+                <li> How do you decide what recipe to cook? What prompts you to choose one recipe over the other? Why?</li>
+                <li> Tell me me about a situation when you wanted to cook a recipe but had to deal with something unexpected. How did you handle the situation? </li>
+                <li> Tell me about the last time you decided to toss away unused food. </li>
+                <li> How was your experience with buying groceries online, if at all? / What are some things that made you decide not to buy groceries online?</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Recruitment</summary>
+              <ul>
+                <li> Approach: Recruitment was done by finding potential users on Slack and Reddit and asking friends who fit the criteria.</li>
+                <li> Criteria: Participants needed to be professionals who have used recipe apps/websites to guide their cooking to qualify for the study. </li>
+              </ul>
+            </details>
+          </section>
         </div>
         <div class="container">
           <div class="wrapper">
-            <h3>Affinity Mapping</h3>
+            <h3>Finding common patterns</h3>
             <p>
               After the transcription of interviews, I used affinity mapping to make sense of my data and find common patterns in users' responses.
               With this technique similar responses are grouped into clusters. These were later used to generate insights.
@@ -511,10 +545,37 @@
               <li> Can users successfully complete basic tasks such as finding a recipe or buying ingredients through the app? </li>
               <li> What errors do occur frequently and how severe are they?</li>
             </ul>
-            <p>
-              Afterwards, I used affinity mapping and a rainbow spreadsheet to organize findings and prioritize issues to be fixed. Errors were measured by using Jakob Nielsen’s rating scale. I also measured satisfaction with Net Promoter
-              Score at the end of the test by asking users for their ratings on how likely they would recommend the app to a friend or colleague.
-            </p>
+            <section class="accordion">
+                <h3> More Details</h3>
+              <details>
+                <summary>Main Scenarios</summary>
+                <ul>
+                  <li> You found some grated cheese in the fridge that will expire soon. You want to use it to prepare dinner, but you don’t know what you can make of it. Use Savly to find a recipe for grated cheese.</li>
+                  <li> After you found the recipe you notice that the proportions are too big and the units aren’t right. Adjust the recipe to cook a dinner for two.</li>
+                  <li> Now that the rice wine is in your cart, you want to complete the purchase. Find a way to buy mirin through the app and have it delivered on March 8 at 2 pm.</li>
+                </ul>
+              </details>
+              <details>
+                <summary>Metrics</summary>
+                <ul>
+                  <li> Success rate and time on task to assess learnability.</li>
+                  <li> Severity of errors measured by Jakob Nielsen’s rating scale.</li>
+                  <li> Net promoter score to gauge satisfaction by asking users how likely it would be they recommend the app to a friend or colleague on a scale from 0-10.</li>
+                </ul>
+              </details>
+              <details>
+                <summary>Recruitment</summary>
+                <p>
+                  Recruitment was done by following up with persona users from interviews, asking friends who fit the recruitment criteria and posting on Slack.</li>
+                </p>
+              </details>
+              <details>
+                <summary>Analysis</summary>
+              <p>
+                I used affinity mapping to identify common patterns in user responses and a rainbow spreadsheet to prioritize issues to be fixed.
+              </p>
+              </details>
+            </section>
           </div>
           <div class="wrapper">
             <h4>Test Results</h4>
@@ -526,7 +587,6 @@
             </div>
             <p>
               The overall feedback was mostly positive, but test results also brought some critical issues to light.
-              All participants found the app simple, straightforward and easy to use. Most of them could complete tasks quickly without any issues.
               The major cause of confusion was task 2 (search for recipe for available ingredients), the lengthy onboarding process, and data entry during checkout.
             </p>
           </div>
@@ -590,7 +650,10 @@
             <h3>Color Choice & Typography</h3>
             <p>
               After having fixed flaws in the prototype through usability testing feedback, it was time to bring Savly to life with visuals. As Savly is content-heavy, I wanted to keep the design minimal and modern to let the images shine.
-              I chose green as an accent color to emphasize the freshness of products and dishes. As a number of people mentioned in the survey that they still use books and handwritten recipe cards, I decided to choose Libre Baskerville as a
+              I chose green as an accent color to emphasize the freshness of products and dishes.
+            </p>
+            <p>
+              As a number of people mentioned in the survey that they still use books and handwritten recipe cards, I decided to choose Libre Baskerville as a
               typeface to resemble the experience of browsing old recipe books. To combine it, I used Libre Franklin to add a modern touch.
             </p>
           </div>
@@ -737,17 +800,16 @@
         <div class="container">
           <div class="wrapper-learnings">
             <p>
-              The Savly project was a great learning experience. Going through the end-to-end process from start to finish was challenging but also rewarding.
-              The process was often messy, included several iterations, and going back and forth between phases when new insights had been gained.
-            </p>
-            <p>
-              Going broad in surveys and narrowing the scope through user insights, prioritization, and user journey mapping was good because it allowed me to focus on essential features to not overload the MVP.
+              Going broad in surveys and narrowing the scope through user insights, prioritization, and user journey mapping allowed me to focus on essential features to not overload the MVP.
               Setting myself constraints also helped me to learn how to balance user needs with business goals to arrive at a solution that could benefit both.
             </p>
             <p>
               If I had more time, I would conduct a card sort for a more intuitive navigation and test the high-fidelity prototype with users to refine the design.
               Next steps for the project also include creating a delivery flow to track updates and a feature to select multiple ingredients in the fridge to find recipes for them.
             </p>
+            <div class="back">
+            <a href="#top">Back to top</a>
+          </div>
           </div>
         </div>
       </section>
@@ -781,7 +843,6 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="dot-nav-min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
