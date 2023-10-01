@@ -10,7 +10,6 @@ yellow (button background): #ffdb5a;
 hover over nav links: #008dd5;
 hover over buttons : #ffd027;
 */
-
 /* typography used:
 primary:
 h3,h4,h5,p,ul,ol,caption,buttons : Lato;
@@ -36,7 +35,6 @@ html {
     url('../fonts/raleway-v28-latin-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/raleway-v28-latin-regular.woff') format('woff');
-
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -50,7 +48,6 @@ html {
     url('../fonts/raleway-v28-latin-600.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/raleway-v28-latin-600.woff') format('woff');
-
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -64,7 +61,6 @@ html {
     url('../fonts/raleway-v28-latin-700.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/raleway-v28-latin-700.woff') format('woff');
-
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -78,7 +74,6 @@ html {
     url('../fonts/lato-v23-latin-300italic.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/lato-v23-latin-300italic.woff') format('woff');
-
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -92,7 +87,6 @@ html {
     url('../fonts/lato-v23-latin-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/lato-v23-latin-regular.woff') format('woff');
-
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -106,7 +100,6 @@ html {
     url('../fonts/lato-v23-latin-700.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/lato-v23-latin-700.woff') format('woff');
-
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -133,7 +126,7 @@ h1 {
   color: #2f2f2f;
   background-color: inherit;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
 }
 
 #impressum h1 {
@@ -151,7 +144,7 @@ h2 {
 }
 
 footer h2 {
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
   text-align: center;
 }
@@ -161,7 +154,7 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
-  color: #323232;
+  color: #2f2f2f;
   background-color: inherit;
 }
 
@@ -202,12 +195,12 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #008dd5;
+  color: #2f2f2f;
   -webkit-tap-highlight-color: transparent !important;
 }
 
 a:active {
-  color: #2d3e50;
+  color: #2f2f2f;
   -webkit-tap-highlight-color: transparent !important;
 }
 
@@ -229,7 +222,7 @@ a:active {
   font-weight: 400;
   color: #2f2f2f;
   background-color: #ffdb5a;
-  padding: 15px 30px;
+  padding: 8px 16px;
   margin-top: 10px;
   border: 1px solid #ffdb5a;
   border-radius: 40px;
@@ -263,10 +256,10 @@ a:active {
   display: inline-block;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: #fff;
+  color: #2f2f2f;
   background-color: transparent;
-  padding: 12px 24px;
-  border: 1px solid #ffdb5a;
+  padding: 8px 16px;
+  border: 1px solid #2f2f2f;
   border-radius: 40px;
   transition-property: box-shadow;
   transition-duration: 0.3s;
@@ -275,14 +268,15 @@ a:active {
 
 .button-contact:hover,
 .button-contact:focus {
-  color: #2f2f2f;
-  background-color: #ffdb5a;
+  color: #fff;
+  font-weight: 400;
+  background-color: #2d3e50;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .button-contact:active {
-  color: #2f2f2f;
-  background-color: #ffdb5a;
+  color: #fff;
+  background-color: #2d3e50;
 }
 
 img {
@@ -316,13 +310,17 @@ main {
 
 header {
   color: inherit;
-  background: #233445;
-  opacity: 0.96;
+  background: #fff;
   padding: 5px 0;
   position: fixed;
   display: inline-block;
   width: 100%;
   z-index: 1;
+}
+
+header.active {
+  color: #f0f0f0;
+  box-shadow: rgba(149, 157, 165, 0.3) 0 2px 8px;
 }
 
 nav ul {
@@ -332,23 +330,25 @@ nav ul {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
   text-transform: uppercase;
 }
 
 nav ul li a:visited {
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
 }
 
 nav ul li a:hover {
-  color: #ffdb5a;
+  color: #2f2f2f;
+  font-weight: 600;
   background-color: inherit;
 }
 
 nav ul li a:active {
-  color: #ffdb5a;
+  color: #2f2f2f;
+  font-weight: 600;
   background-color: inherit;
 }
 
@@ -362,7 +362,7 @@ nav ul li a:active {
   top: 14px;
   font-size: 29px;
   padding-right: 15px;
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
 }
 
@@ -400,7 +400,7 @@ nav ul li a:active {
   top: 20px;
   font-size: 35px;
   padding-right: 30px;
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
 }
 
@@ -409,7 +409,7 @@ nav ul li a:active {
 }
 
 #hero {
-  color: #323232;
+  color: #2f2f2f;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -424,9 +424,9 @@ nav ul li a:active {
 }
 
 #index #hero .container {
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 #work .row {
@@ -439,9 +439,9 @@ nav ul li a:active {
 }
 
 footer {
-  background: #233445;
+  background: #fafbfd;
   opacity: 0.96;
-  color: #fff;
+  color: #2f2f2f;
   text-align: center;
   padding: 20px 0;
   display: inline-block;
@@ -463,7 +463,7 @@ footer ul li a {
 }
 
 footer a:visited {
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
 }
 
@@ -471,13 +471,14 @@ footer a:hover,
 footer a:focus,
 footer i:hover,
 footer i:focus {
-  color: #ffdb5a;
+  color: #2f2f2f;
+  font-weight: 600;
   background-color: inherit;
 }
 
 footer a:active,
 footer i:active {
-  color: #ffdb5a;
+  color: #2f2f2f;
   background-color: inherit;
 }
 
@@ -487,16 +488,16 @@ footer i:active {
 }
 
 .fab {
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
   font-size: 25px;
   max-width: 40px;
 }
 
 footer .fas {
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
-  font-size: 25px;
+  font-size: 24px;
   max-width: 30px;
 }
 
@@ -635,11 +636,11 @@ ul li {
 }
 
 #index .underline-index {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #2f2f2f;
 }
 
 #about .underline-about {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #2f2f2f;
 }
 
 .menu {
@@ -660,25 +661,26 @@ Layout styling End
 }
 
 .impressum {
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
   font-size: 12px;
   padding-right: 2px;
 }
 
 .impressum:visited {
-  color: #fff;
+  color: #2f2f2f;
   background-color: inherit;
 }
 
 .impressum:hover,
 .impressum:focus {
-  color: #ffdb5a;
+  color: #2f2f2f;
+  font-weight: 600;
   background-color: inherit;
 }
 
 .impressum:active {
-  color: #ffdb5a;
+  color: #2f2f2f;
   background-color: inherit;
   text-decoration: underline;
 }
@@ -778,7 +780,7 @@ Layout styling End
   -webkit-tap-highlight-color: transparent !important;
 }
 
-details[open] summary ~ * {
+details[open] summary~* {
   animation: open 0.3s ease-in-out;
 }
 
@@ -934,7 +936,7 @@ details p {
   }
 
   #index #hero .container {
-    padding-top: 30px;
+    padding-top: 10px;
   }
 
   #index .col-md-6 {
@@ -1260,7 +1262,7 @@ details p {
     }
 
     #index #hero .container {
-      padding-top: 40px;
+      padding-top: 20px;
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
@@ -1475,7 +1477,7 @@ details p {
       }
 
       #index #hero .container {
-        padding-top: 40px;
+        padding-top: 20px;
       }
 
       #work h2,
@@ -1511,7 +1513,7 @@ details p {
 
       @media only screen and (min-width: 1440px) {
         #index #hero .container {
-          padding-top: 40px;
+          padding-top: 30px;
         }
       }
     }
