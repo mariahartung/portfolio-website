@@ -835,6 +835,10 @@ details p {
   padding-top: 1rem;
 }
 
+.process{
+  display:none;
+}
+
 /* medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
   body {
@@ -1275,7 +1279,7 @@ details p {
     }
 
     #work .row {
-      margin-top: 60px;
+      margin-top: 40px;
       margin-bottom: 0;
     }
 
