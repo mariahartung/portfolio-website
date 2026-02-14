@@ -7,9 +7,6 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Maria Hartung | UX Designer">
-  <meta property="og:description" content="Maria Hartung | UX Designer | Portfolio">
-  <meta property="og:url" content="https://mariahartung.com/">
   <title>Maria Hartung | UX Designer</title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -35,7 +32,7 @@
             <li><a href="index.html"><span class="underline-index">Work</span></a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i><i class="fas fa-times"></i></a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i><i class="fas fa-times"></i></ul></a></li>
           </ul>
         </nav>
       </div>
@@ -54,6 +51,26 @@
     <div id="work">
       <div class="container">
         <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="full-width">
+              <a href="communities-protected.html">
+                <picture>
+                  <source srcset="img/communities/d_communities.jpg" media="(max-width:767px)">
+                  <img src="img/communities/m_communities.jpg" alt="communities image">
+                </picture>
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <div class="full-width">
+                <p class="project-type">Healthcare · Social Network 
+                </p>
+                <h3 class="project-title">Acme 🔒 
+                </h3>
+                  <p class="project-description">Community groups for caregivers to boost engagement and encourage topic-based discussions in the app.
+                  </p>
+              </div>
+            </div>
+          </div>
           <div class="col-md-6 col-lg-6">
             <div class="full-width">
               <a href="lenslane.html">
@@ -154,7 +171,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6">
+          <div class="col-md-6 col-lg-6" style="display: none";>
             <div class="full-width">
               <a href="portfolio.html">
                 <picture>
